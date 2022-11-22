@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper-game-app-page {
+    background-color: #0D0F1E !important;
+}
+
+.wrapper-game-app-page .box-content-header {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.wrapper-game-app-page .box-content-header .line-gradient {
+    width: 1204.03px;
+    height: 4px;
+    background: radial-gradient(50% 50% at 50% 50%, #939DB5 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-180deg);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 20px 0;
+}
+
+.wrapper-game-app-page .description-title {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+}
+.icon-chevron {
+    width: 14px;
+    height: 14px;
+}
+
+.wrapper-game-app-page .tab-customize {
+    margin-top: 30px;
+}
+
+.wrapper-game-app-page .tab-customize .tab-head-item {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    flex: 1;
+}
+
+.wrapper-game-app-page .tab-customize .nav-item .nav-link {
+    background-color: unset;
+    border: unset;
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    fill: rgba(255, 255, 255, 0.8);
+}
+
+.wrapper-game-app-page .tab-customize .nav-link.active {
+    color: #F47532;
+    border-bottom: 2px solid #F47532;
+    fill: #F47532;
+}
+
+.wrapper-game-app-page .nav-tabs {
+    border: unset;
+}
+
+.wrapper-game-app-page #header-tab-nav {
+    margin-bottom: 25px;
+}
+
+.wrapper-game-app-page .wrapper-tabs .main-game-item .image-preview{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.wrapper-game-app-page #home-tab-pane .game-item {
+    background: #1C1E2D;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.wrapper-game-app-page .main-game-item-content .title-apk-item {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 4px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrapper-game-app-page .main-game-item-content .color-gray {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.wrapper-game-app-page .main-game-item-content p {
+    margin-bottom: 4px;
+}
+.wrapper-game-app-page .main-game-item-content .mod-game {
+    color: #FFFFFF;
+    font-size: 14px;
+}
