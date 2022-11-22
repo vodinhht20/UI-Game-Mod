@@ -7,6 +7,7 @@
 
 .wrapper-game-app-page {
     background-color: #0D0F1E !important;
+    padding: 20px 0;
 }
 
 .wrapper-game-app-page .box-content-header {
@@ -92,7 +93,7 @@
     object-fit: cover;
 }
 
-.wrapper-game-app-page #home-tab-pane .game-item {
+.wrapper-game-app-page .tab-wrap-content .game-item {
     background: #1C1E2D;
     border-radius: 8px;
     padding: 10px;
@@ -172,13 +173,35 @@
 
 .wrapper-game-app-page .pagination .page-item a{
     background: unset;
-    border-color: #939DB5;
-    color: #939DB5;
-    fill: #939DB5;
-    border-radius: 2px;
-
+    color: rgba(255, 255, 255, 0.4);
+    fill: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
+.wrapper-game-app-page .pagination .page-link:focus {
+    box-shadow: unset;
+}
+
+.wrapper-game-app-page .pagination .page-link:hover {
+    border-color: #F47532;
+    background-color: #F47532;
+}
+
+.wrapper-game-app-page .pagination .page-item.active a {
+    background-color: #F47532;
+    border-color: #F47532;
+    color: #FFFFFF;
+}
+.wrapper-game-app-page .pagination .page-item.range-page a {
+    background: unset;
+    border: unset;
+    color: #F47532;
+}
 .wrapper-game-app-page .box-pagination .icon-angle-nav {
     width: 16px;
     height: 16px;
