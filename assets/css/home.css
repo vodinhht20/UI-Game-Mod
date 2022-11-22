@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --color-system: #1C1E2D;
+    --color-background: #0D0F1E;
+    --color-white: #fff;
+    --color-mojang: #F47532;
+    --color-join: #262F41;
+}
+
+body {
+    background-color: var(--color-background) !important;
+}
+
+nav.navbar.navbar-expand-lg.bg-light {
+    background-color: var(--color-system) !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title-sand {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.navbar-toggler {
+    background-color: var(--color-mojang) !important;
+}
+
+.navbar-toggler-icon.menu-mobile {
+    background-image: url('/assets/images/icon-menu.png');
+}
+
+/* icon */
+
+.icon-search {
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(/assets/images/icon-search.png);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    left: 2.5px;
+    top: 2.5px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.icon-time {
+    background-image: url(/assets/images/icon-time.png);
+}
+
+.icon-coin {
+    background-image: url(/assets/images/icon-coin.png);
+}
+
+.icon-star {
+    background-image: url(/assets/images/icon-star.png);
+}
+
+.icon-union {
+    background-image: url(/assets/images/icon-union.png);
+}
+
+.icon-arcade {
+    background-image: url(/assets/images/icon-arcade.png);
+}
+
+.icon-store {
+    background-image: url(/assets/images/icon-store.png);
+}
+
+.icon-code {
+    background-image: url(/assets/images/icon-code.png);
+}
+
+.icon-check {
+    background-image: url(/assets/images/icon-check.png);
+    height: 22px;
+    width: 22px;
+}
+
+.icon-download {
+    background-image: url(/assets/images/icon-download.png);
+    height: 22px;
+    width: 22px;
+}
+
+/* button */
+
+.btn-system {
+    background-color: var(--color-system);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btn-join {
+    background-color: var(--color-join);
+}
+
+.btn-action {
+    background-color: var(--color-mojang) !important;
+    box-shadow: 0px 4px 4px rgb(211 211 211 / 25%);
+    border-radius: 8px;
+    width: 162px;
+    height: 49px;
+}
+
+h2.title-head {
+    width: 255px;
+    height: 32px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    text-align: center;
+    color: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0;
+}
+
+/* main */
+.main {
+    font-family: 'Quicksand';
+    color: #FFFFFF;
+}
+
+main .banner {
+    margin: 25px 0;
+}
+
+main .contain-1 {
+    display: flex;
+    color: var(--color-white);
+    padding: 0 20px 0 5px;
+}
+
+.main .contain-1 .content {
+    flex: 1;
+    margin: auto;
+}
+
+.contain-1 .content .title-version,
+main .contain-1 .update-free {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contain-2 .contain-art {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--bs-white);
+    padding: 0 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.contain-2 .contain-art.color-yellow {
+    color: var(--color-mojang);
+}
+
+.rectangle-line {
+    height: 6px;
+    width: 100%;
+    background-color: var(--color-system);
+}
+
+.article-features {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    gap: 12px;
+    isolation: isolate;
+    width: 342px;
+    height: 155px;
+    /* a */
+    background: linear-gradient(271.56deg, rgba(0, 198, 234, 0.6) 2.9%, rgba(5, 211, 248, 0) 64.84%), linear-gradient(185.22deg, #4CE9F6 3.46%, #05D3F8 85.81%);
+    border-radius: 16px;
+    margin: 20px auto;
+}
+
+.article-features .title {
+    color: var(--color-background);
+    margin: auto;
+}
+
+.article-features .title-description {
+    margin: 0;
+}
+
+.article-btn {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.article-btn .download {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-btn .download span {
+    flex: 1;
+}
+
+.article-btn .join-telegram {
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.article-btn .join-telegram span {
+    flex: 1;
+}
+
+.article-text {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8px !important;
+    height: 8px !important; 
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    bottom: -3rem !important;
+}
+
+.carousel-indicators .active {
+    background-color: transparent !important;
+    width: 24px !important;
+    background-image: url(/assets/images/dot-active.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0;
+}
+
+.features-2 {
+    background: var(--color-system);
+    width: 354px;
+    height: auto;
+}
+.features-2 .title, .features-3 .title {
+    color: var(--bs-white);
+    position: relative;
+}
+
+.features-2 .title::before, .features-3 .title::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/images/hr.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    bottom: -2rem;
+    width: 200%;
+    left: calc(-50%);
+    height: 10px;
+    background-size: 100% 100%;
+}
+
+.content-game{
+     text-align: center;
+}
+
+.features-3 {
+    background: transparent;
+    width: 354px;
+    height: auto;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-system) !important;
+}
+
+.accordion button{
+     border: none !important;
+}
