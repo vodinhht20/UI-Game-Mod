@@ -14,9 +14,78 @@
 
 <body>
     <header class="head">
-        <div class="head-top"></div>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+        <div class="head-top navbar navbar-expand-lg bg-light d-none d-md-block">
+            <div class="container-fluid menu-pc">
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h4>Logo</h4>
+                </div>
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.25 7.5C1.25 6.11929 2.36929 5 3.75 5H26.25C27.6307 5 28.75 6.11929 28.75 7.5V22.5C28.75 23.8807 27.6307 25 26.25 25H3.75C2.36929 25 1.25 23.8807 1.25 22.5V7.5Z"
+                                    fill="#EA4335" />
+                                <path
+                                    d="M15 9.375L16.6687 12.9927L20.625 13.4618L17.7 16.1668L18.4764 20.0744L15 18.1284L11.5236 20.0744L12.3 16.1668L9.375 13.4618L13.3313 12.9927L15 9.375Z"
+                                    fill="#FFC700" />
+                            </svg>
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><svg width="30" height="30" viewBox="0 0 30 30"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.25 7.5C1.25 6.11929 2.36929 5 3.75 5H26.25C27.6307 5 28.75 6.11929 28.75 7.5V22.5C28.75 23.8807 27.6307 25 26.25 25H3.75C2.36929 25 1.25 23.8807 1.25 22.5V7.5Z"
+                                            fill="#EA4335" />
+                                        <path
+                                            d="M15 9.375L16.6687 12.9927L20.625 13.4618L17.7 16.1668L18.4764 20.0744L15 18.1284L11.5236 20.0744L12.3 16.1668L9.375 13.4618L13.3313 12.9927L15 9.375Z"
+                                            fill="#FFC700" />
+                                    </svg>
+                                    <span>Tiếng việt</span>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#"><svg width="30" height="21" viewBox="0 0 26 20"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path
+                                            d="M0.166504 2.99996C0.166504 1.7113 1.21117 0.666626 2.49984 0.666626H23.4998C24.7885 0.666626 25.8332 1.7113 25.8332 2.99996V17C25.8332 18.2886 24.7885 19.3333 23.4998 19.3333H2.49984C1.21117 19.3333 0.166504 18.2886 0.166504 17V2.99996Z"
+                                            fill="url(#pattern0)" />
+                                        <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                                height="1">
+                                                <use xlink:href="#image0_629_12914"
+                                                    transform="translate(-0.0534466) scale(0.003996 0.00549451)" />
+                                            </pattern>
+                                            <image id="image0_629_12914" width="277" height="182"
+                                                xlink:href="data:image/png;base64,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" />
+                                        </defs>
+                                    </svg>
+                                    <span>English</span>
+                                </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown user-info">
+                        <div class="avatar">
+                            <img src="/assets/images/avatar.png" alt="avatar" />
+                        </div>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nguyễn Văn Minh
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light d-lg-none">
+            <div class="container-fluid menu-mobile">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -24,37 +93,140 @@
                 </button>
                 <h2 class="title-head">Chi tiết game</h2>
                 <div class="search icon-search"></div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                <div class="menu-sidebar-mobile collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="full-page-sidebar" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    </div>
+                    <div class="menu-sidebar-content">
+                        <div class="menu-sidebar-mobile-top mb-3">
+                            <div class="logo">
+                                <div class="logo-img"></div>
+                                <h2>Logo</h2>
+                            </div>
+                            <button class="navbar-toggler btn-menu-sidebar" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="/assets/images/left-menu-close.svg" class="close-menu-sidebar"></img>
+                            </button>
+                        </div>
+                        <div class="line-gradient"></div>
+
+                        <div class="menu-sidebar-mobile-user mt-4 mb-2">
+                            <div class="avatar">
+                                U
+                            </div>
+                            <div class="name-date">
+                                <h6>Hello , Nguyen Minh Anh</h6>
+                                <span class="date">Thứ 4, 22/12/2022</span>
+                            </div>
+                        </div>
+
+                        <ul class="list-menu-sidebar-mobile">
+                            <li>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.72665 24.5L4.72667 13.3102L3.82716 14.0687C3.45672 14.3811 2.88947 14.3495 2.56019 13.998C2.2309 13.6466 2.26427 13.1085 2.63472 12.7961L13.4039 3.71504C13.744 3.42832 14.2564 3.42832 14.5964 3.71504L25.3656 12.7961C25.7361 13.1085 25.7694 13.6466 25.4401 13.998C25.1108 14.3495 24.5436 14.3811 24.1732 14.0687L23.2737 13.3102L23.2736 24.5H4.72665ZM17.2908 22.7973H21.4788V11.7967L14.0002 5.49042L6.52154 11.7967V22.7973H10.7096V16.8378C10.7096 16.3676 11.1114 15.9865 11.607 15.9865H16.3933C16.889 15.9865 17.2908 16.3676 17.2908 16.8378V22.7973ZM12.5044 17.6892V22.7973H15.4959V17.6892H12.5044Z"
+                                        fill="white" />
+                                </svg>
+
+                                <span>Home</span>
+                            </li>
+                            <li>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.3702 11.6031C9.79747 11.6031 9.33317 12.0642 9.33317 12.633C9.33317 13.2019 9.79747 13.663 10.3702 13.663C10.9429 13.663 11.4072 13.2019 11.4072 12.633C11.4072 12.0642 10.9429 11.6031 10.3702 11.6031Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.8003 12.633C16.8003 12.0642 17.2646 11.6031 17.8373 11.6031C18.4101 11.6031 18.8744 12.0642 18.8744 12.633C18.8744 13.2019 18.4101 13.663 17.8373 13.663C17.2646 13.663 16.8003 13.2019 16.8003 12.633Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.1665 16.3333C8.1665 15.6889 8.68884 15.1666 9.33317 15.1666H18.6665C19.3108 15.1666 19.8332 15.6889 19.8332 16.3333V18.6666C19.8332 19.3109 19.3108 19.8333 18.6665 19.8333H9.33317C8.68884 19.8333 8.1665 19.3109 8.1665 18.6666V16.3333ZM9.68317 18.3166V16.6833H10.9083V18.3166H9.68317ZM12.425 18.3166V16.6833H15.575V18.3166H12.425ZM17.0916 18.3166H18.3165V16.6833H17.0916V18.3166Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.1665 2.33325C6.87784 2.33325 5.83317 3.37081 5.83317 4.65071C5.83317 5.93061 6.87784 6.96817 8.1665 6.96817C8.23955 6.96817 8.3118 6.96484 8.38313 6.95831L8.85054 8.12685H7.4665C5.92011 8.12685 4.6665 9.37193 4.6665 10.9078V19.7656C4.6665 21.3015 5.92011 22.5466 7.46651 22.5466H8.81465V24.7378C8.81465 25.5151 9.71992 25.9472 10.331 25.4617L13.9998 22.5466H20.5332C22.0796 22.5466 23.3332 21.3015 23.3332 19.7656V10.9078C23.3332 9.37193 22.0796 8.12685 20.5332 8.12685H19.1491L19.6165 6.95831C19.6879 6.96484 19.7601 6.96817 19.8332 6.96817C21.1218 6.96817 22.1665 5.93061 22.1665 4.65071C22.1665 3.37081 21.1218 2.33325 19.8332 2.33325C18.5445 2.33325 17.4998 3.37081 17.4998 4.65071C17.4998 5.31486 17.7811 5.91376 18.2319 6.33629L17.5156 8.12685H10.484L9.76782 6.33629C10.2185 5.91376 10.4998 5.31486 10.4998 4.65071C10.4998 3.37081 9.45517 2.33325 8.1665 2.33325ZM8.1665 3.84992C7.70569 3.84992 7.34984 4.21819 7.34984 4.65071C7.34984 5.08323 7.70569 5.4515 8.1665 5.4515C8.62731 5.4515 8.98317 5.08323 8.98317 4.65071C8.98317 4.21819 8.62731 3.84992 8.1665 3.84992ZM10.2147 23.7735V21.1561H7.46651C6.69331 21.1561 6.0665 20.5336 6.0665 19.7656V10.9078C6.0665 10.1399 6.69331 9.51733 7.4665 9.51733H20.5332C21.3064 9.51733 21.9332 10.1399 21.9332 10.9078V19.7656C21.9332 20.5336 21.3064 21.1561 20.5332 21.1561H13.5087L10.2147 23.7735ZM20.6498 4.65071C20.6498 4.21819 20.294 3.84992 19.8332 3.84992C19.3724 3.84992 19.0165 4.21819 19.0165 4.65071C19.0165 5.08323 19.3724 5.4515 19.8332 5.4515C20.294 5.4515 20.6498 5.08323 20.6498 4.65071Z"
+                                        fill="white" />
+                                </svg>
+
+                                <span>Games</span>
+                            </li>
+                            <li>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.3335 2.33337C7.4005 2.33337 5.8335 3.90038 5.8335 5.83337V22.1667C5.8335 24.0997 7.4005 25.6667 9.3335 25.6667H18.6668C20.5998 25.6667 22.1668 24.0997 22.1668 22.1667V5.83337C22.1668 3.90038 20.5998 2.33337 18.6668 2.33337H9.3335ZM18.6668 4.08337H9.3335C8.367 4.08337 7.5835 4.86688 7.5835 5.83337V6.12504H20.4168V5.83337C20.4168 4.86688 19.6333 4.08337 18.6668 4.08337ZM7.5835 20.125V7.87504H20.4168V20.125H7.5835ZM7.5835 21.875V22.1667C7.5835 23.1332 8.367 23.9167 9.3335 23.9167H18.6668C19.6333 23.9167 20.4168 23.1332 20.4168 22.1667V21.875H7.5835Z"
+                                        fill="white" />
+                                </svg>
+
+                                <span>Apps</span>
+                            </li>
+                            <li>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.45351 3.5C3.40812 3.5 1.75 5.24608 1.75 7.39999V9.2C1.75 9.69705 2.13264 10.1 2.60465 10.1H7.4477V20.8C7.4477 21.8348 7.85258 22.7709 8.50104 23.4419C8.96719 23.9233 9.56364 24.2687 10.2252 24.4183C10.3337 24.4708 10.4543 24.5 10.5814 24.5H21.9769L21.9964 24.4998H23.1162C23.2427 24.4998 23.3627 24.4708 23.4707 24.4189C25.0593 24.0632 26.2499 22.5784 26.2499 20.7998V19.1998C26.2499 18.7027 25.8673 18.2998 25.3953 18.2998H22.8315V7.19999C22.8315 5.4213 21.6407 3.93663 20.0524 3.58085C19.9443 3.52893 19.8243 3.5 19.6978 3.5H6.02326C5.9601 3.5 5.89854 3.50721 5.83929 3.5209C5.71248 3.50708 5.58378 3.5 5.45351 3.5ZM12.1699 22.6807C12.1385 22.6854 12.1078 22.6919 12.0777 22.7H10.7936C10.7645 22.6922 10.7347 22.6859 10.7044 22.6812C10.3158 22.6218 9.96504 22.4327 9.69861 22.1576C9.36287 21.8099 9.157 21.3306 9.157 20.8V6.79999C9.157 6.25993 9.03372 5.75008 8.81518 5.29999H19.4856C19.5154 5.308 19.5459 5.3144 19.577 5.31907C20.4502 5.45037 21.1222 6.24305 21.1222 7.19999V18.2998H14.5698C14.0978 18.2998 13.7151 18.7027 13.7151 19.1998V20.7998C13.7151 21.7568 13.0432 22.5494 12.1699 22.6807ZM7.4477 7.39033C7.44276 6.23497 6.55182 5.29999 5.45351 5.29999C4.35214 5.29999 3.4593 6.24019 3.4593 7.39999V8.3H7.4477V7.39033ZM22.904 22.6998C22.9338 22.6918 22.9643 22.6854 22.9954 22.6807C23.8687 22.5494 24.5406 21.7568 24.5406 20.7998V20.0998H15.4244V20.7998C15.4244 21.4946 15.2428 22.1445 14.9267 22.6998H22.904ZM12.8603 8.30003C12.3883 8.30003 12.0056 8.70297 12.0056 9.20003C12.0056 9.69708 12.3883 10.1 12.8603 10.1H17.4184C17.8904 10.1 18.2731 9.69708 18.2731 9.20003C18.2731 8.70297 17.8904 8.30003 17.4184 8.30003H12.8603ZM12.8603 12.5C12.3883 12.5 12.0056 12.9029 12.0056 13.4C12.0056 13.897 12.3883 14.3 12.8603 14.3H17.4184C17.8904 14.3 18.2731 13.897 18.2731 13.4C18.2731 12.9029 17.8904 12.5 17.4184 12.5H12.8603Z"
+                                        fill="white" />
+                                </svg>
+
+                                <span>Blogs</span>
+                            </li>
+                            <li>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.33301 13.9999C2.33301 7.5566 7.55635 2.33325 13.9997 2.33325C20.443 2.33325 25.6663 7.5566 25.6663 13.9999C25.6663 20.4432 20.443 25.6666 13.9997 25.6666C7.55635 25.6666 2.33301 20.4432 2.33301 13.9999ZM20.7019 21.0611L20.7818 21.1173L20.8519 21.0492C22.689 19.2631 23.8305 16.7647 23.8305 13.9999C23.8305 8.57053 19.4291 4.16913 13.9997 4.16913C8.57028 4.16913 4.16889 8.57053 4.16889 13.9999C4.16889 16.7647 5.31032 19.2631 7.1475 21.0492L7.21752 21.1173L7.29742 21.0611C9.19381 19.7281 11.5062 18.9449 13.9997 18.9449C16.4931 18.9449 18.8055 19.7281 20.7019 21.0611ZM19.0991 22.4064L19.2647 22.3057L19.0991 22.205C17.6124 21.301 15.8675 20.7808 13.9997 20.7808C12.1318 20.7808 10.3869 21.301 8.90024 22.205L8.73462 22.3057L8.90025 22.4064C10.3871 23.3102 12.1327 23.8307 13.9997 23.8307C15.8667 23.8307 17.6123 23.3102 19.0991 22.4064Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.33312 12.0868C9.33312 9.51507 11.4221 7.42967 13.9998 7.42967C16.5775 7.42967 18.6665 9.51507 18.6665 12.0868V12.8428C18.6665 15.4145 16.5775 17.4999 13.9998 17.4999C11.4221 17.4999 9.33312 15.4145 9.33312 12.8428V12.0868ZM13.9998 9.18306C12.3935 9.18306 11.0907 10.4828 11.0907 12.0868V12.8428C11.0907 14.4469 12.3935 15.7466 13.9998 15.7466C15.6061 15.7466 16.9089 14.4469 16.9089 12.8428V12.0868C16.9089 10.4828 15.6061 9.18306 13.9998 9.18306Z"
+                                        fill="white" />
+                                </svg>
+
+                                <span>Profile</span>
+                            </li>
+                            <li>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.54305 21.3456C6.54305 21.407 6.59279 21.4568 6.65416 21.4568H11.9011C12.4193 21.4568 12.8393 21.8768 12.8393 22.395C12.8393 22.9132 12.4193 23.3333 11.9011 23.3333H6.65416C5.55641 23.3333 4.6665 22.4434 4.6665 21.3456V6.65428C4.6665 5.55653 5.55641 4.66663 6.65416 4.66663H11.9011C12.4193 4.66663 12.8393 5.0867 12.8393 5.6049C12.8393 6.12309 12.4193 6.54317 11.9011 6.54317H6.65416C6.59279 6.54317 6.54305 6.59292 6.54305 6.65428V21.3456Z"
+                                        fill="white" />
+                                    <path
+                                        d="M23.3332 14.0028C23.3328 14.1292 23.3075 14.2494 23.262 14.3591C23.2173 14.4671 23.1515 14.5686 23.0645 14.6573L23.0573 14.6645L18.8608 18.8609C18.4944 19.2274 17.9003 19.2274 17.5339 18.8609C17.1675 18.4945 17.1675 17.9005 17.5339 17.534L19.94 15.1279C19.9718 15.0961 19.9813 15.0483 19.9641 15.0068C19.9469 14.9653 19.9064 14.9382 19.8615 14.9382H10.8517C10.3335 14.9382 9.91342 14.5182 9.91342 14C9.91342 13.4818 10.3335 13.0617 10.8517 13.0617H19.8615C19.9064 13.0617 19.9469 13.0346 19.9641 12.9931C19.9813 12.9516 19.9718 12.9038 19.94 12.872L17.5339 10.4659C17.1675 10.0995 17.1675 9.50539 17.5339 9.13897C17.9003 8.77255 18.4944 8.77255 18.8608 9.13897L23.0584 13.3365C23.2409 13.519 23.3325 13.7578 23.3332 13.9971L23.3332 14.0001L23.3332 14.0028Z"
+                                        fill="white" />
+                                </svg>
+
+                                <span>Logout</span>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
+                <form class="menu-search">
+                    <div class="close"></div>
+                    <input id="search-input" name="q" placeholder="Tìm kiếm" type="text">
+                    <!-- <div class="not-found">
+                        <span class="mb-3">Chưa có kết quả tìm kiếm!!</span>
+                        <img src="/assets/images/icon-page.svg" alt="">
+                    </div> -->
+                    <u class="show-search">
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                        <a href="#" class="list-group-item"><span>Ga</span>BCW230</a>
+                    </u>
+                </form>
+                <div class="full-page"></div>
             </div>
         </nav>
     </header>
@@ -133,7 +305,7 @@
             </ul>
         </div>
 
-        <div class="article-btn">
+        <div class="article-btn mt-4">
             <button type="button" class="btn btn-action download">
                 <i class="icon icon-download"></i>
                 <span>Dowload</span>
@@ -269,6 +441,343 @@
                         </div>
                     </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFor">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFor" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFor">
+                            Text field 4
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFor" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFor">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-btn">
+            <button type="button" class="btn btn-action download">
+                <i class="icon icon-download"></i>
+                <span>Dowload</span>
+            </button>
+            <div class="title title-sand">Recommended for you</div>
+
+            <div class="banner">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="game-item">
+                                <div class="main-game-item row">
+                                    <div class="col-4 image-preview">
+                                        <img src="./assets/images/image-preview-apk.png" alt="">
+                                    </div>
+                                    <div class="col-8 main-game-item-content">
+                                        <h5 class="title-apk-item">APK Diamond Heckk Mod Apk Frefir cho AndroidAPK
+                                            Diamond Heckk Mod Apk Frefir</h5>
+                                        <p class="color-gray">Ver 1.1</p>
+                                        <p class="color-gray">Thể loại: Hành động</p>
+                                        <p class="mod-game">Mod game</p>
+                                    </div>
+                                </div>
+                                <div class="line-gradient"></div>
+                                <div class="action-bottom-game-item">
+                                    <button>
+                                        <div class="icon-robot">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.44202 10.0001C6.97108 10.0001 6.58931 10.3732 6.58931 10.8334C6.58931 11.2937 6.97108 11.6667 7.44202 11.6667C7.91296 11.6667 8.29474 11.2937 8.29474 10.8334C8.29474 10.3732 7.91296 10.0001 7.44202 10.0001Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M12.5583 10.0001C12.0874 10.0001 11.7056 10.3732 11.7056 10.8334C11.7056 11.2937 12.0874 11.6667 12.5583 11.6667C13.0292 11.6667 13.411 11.2937 13.411 10.8334C13.411 10.3732 13.0292 10.0001 12.5583 10.0001Z"
+                                                    fill="white"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.29474 3.32208C8.29474 2.40786 9.05828 1.66675 10.0002 1.66675C10.942 1.66675 11.7056 2.40786 11.7056 3.32208C11.7056 4.04808 11.2241 4.66492 10.5541 4.88813V5.80493H14.7754C15.9056 5.80493 16.8219 6.69427 16.8219 7.79133V14.1184C16.8219 15.2154 15.9056 16.1047 14.7754 16.1047H10.0002L7.31865 18.1869C6.87199 18.5338 6.21033 18.2251 6.21033 17.6699V16.1047H5.22497C4.09471 16.1047 3.17846 15.2154 3.17846 14.1184V7.79133C3.17846 6.69427 4.09471 5.80493 5.22497 5.80493H9.44557V4.88791C8.77594 4.66451 8.29474 4.04784 8.29474 3.32208ZM9.40326 3.32208C9.40326 3.01313 9.66336 2.75008 10.0002 2.75008C10.337 2.75008 10.5971 3.01313 10.5971 3.32208C10.5971 3.63102 10.337 3.89407 10.0002 3.89407C9.66336 3.89407 9.40326 3.63102 9.40326 3.32208ZM5.22497 15.1116C4.65984 15.1116 4.20171 14.6669 4.20171 14.1184V7.79133C4.20171 7.2428 4.65984 6.79813 5.22497 6.79813H14.7754C15.3405 6.79813 15.7986 7.2428 15.7986 7.79133V14.1184C15.7986 14.6669 15.3405 15.1116 14.7754 15.1116H9.64122L7.23358 16.9811V15.1116H5.22497Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M18.5273 8.54175C18.8805 8.54175 19.1668 8.82157 19.1668 9.16675V11.6667C19.1668 12.0119 18.8805 12.2917 18.5273 12.2917C18.1741 12.2917 17.8878 12.0119 17.8878 11.6667V9.16675C17.8878 8.82157 18.1741 8.54175 18.5273 8.54175Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.11257 9.16675C2.11257 8.82157 1.82624 8.54175 1.47303 8.54175C1.11983 8.54175 0.833496 8.82157 0.833496 9.16675V11.6667C0.833496 12.0119 1.11983 12.2917 1.47303 12.2917C1.82624 12.2917 2.11257 12.0119 2.11257 11.6667L2.11257 9.16675Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <span>MOD/APK</span>
+                                    </button>
+                                    <div class="size-game-download">
+                                        <div class="icon-layer-block">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.2713 2.56432C10.1001 2.47872 9.89862 2.47872 9.72743 2.56432L2.83566 6.01021C2.62965 6.11321 2.49951 6.32377 2.49951 6.5541C2.49951 6.78443 2.62965 6.995 2.83566 7.098L9.72743 10.5439C9.89862 10.6295 10.1001 10.6295 10.2713 10.5439L17.1631 7.098C17.3691 6.995 17.4992 6.78443 17.4992 6.5541C17.4992 6.32377 17.3691 6.11321 17.1631 6.01021L10.2713 2.56432Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.56384 13.1741C2.71404 12.8737 3.0793 12.7519 3.37969 12.9021L9.99951 16.212L16.6193 12.9021C16.9197 12.7519 17.285 12.8737 17.4352 13.1741C17.5854 13.4744 17.4636 13.8397 17.1632 13.9899L10.2715 17.4358C10.1003 17.5214 9.89876 17.5214 9.72756 17.4358L2.83579 13.9899C2.53541 13.8397 2.41365 13.4744 2.56384 13.1741Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M3.37969 9.45622C3.0793 9.30603 2.71404 9.42779 2.56384 9.72817C2.41365 10.0286 2.53541 10.3938 2.83579 10.544L9.72756 13.9899C9.89876 14.0755 10.1003 14.0755 10.2715 13.9899L17.1632 10.544C17.4636 10.3938 17.5854 10.0286 17.4352 9.72817C17.285 9.42779 16.9197 9.30603 16.6193 9.45622L9.99951 12.7661L3.37969 9.45622Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="size-info">100MB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="game-item">
+                                <div class="main-game-item row">
+                                    <div class="col-4 image-preview">
+                                        <img src="./assets/images/image-preview-apk.png" alt="">
+                                    </div>
+                                    <div class="col-8 main-game-item-content">
+                                        <h5 class="title-apk-item">APK Diamond Heckk Mod Apk Frefir cho AndroidAPK
+                                            Diamond Heckk Mod Apk Frefir</h5>
+                                        <p class="color-gray">Ver 1.1</p>
+                                        <p class="color-gray">Thể loại: Hành động</p>
+                                        <p class="mod-game">Mod game</p>
+                                    </div>
+                                </div>
+                                <div class="line-gradient"></div>
+                                <div class="action-bottom-game-item">
+                                    <button>
+                                        <div class="icon-robot">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.44202 10.0001C6.97108 10.0001 6.58931 10.3732 6.58931 10.8334C6.58931 11.2937 6.97108 11.6667 7.44202 11.6667C7.91296 11.6667 8.29474 11.2937 8.29474 10.8334C8.29474 10.3732 7.91296 10.0001 7.44202 10.0001Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M12.5583 10.0001C12.0874 10.0001 11.7056 10.3732 11.7056 10.8334C11.7056 11.2937 12.0874 11.6667 12.5583 11.6667C13.0292 11.6667 13.411 11.2937 13.411 10.8334C13.411 10.3732 13.0292 10.0001 12.5583 10.0001Z"
+                                                    fill="white"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.29474 3.32208C8.29474 2.40786 9.05828 1.66675 10.0002 1.66675C10.942 1.66675 11.7056 2.40786 11.7056 3.32208C11.7056 4.04808 11.2241 4.66492 10.5541 4.88813V5.80493H14.7754C15.9056 5.80493 16.8219 6.69427 16.8219 7.79133V14.1184C16.8219 15.2154 15.9056 16.1047 14.7754 16.1047H10.0002L7.31865 18.1869C6.87199 18.5338 6.21033 18.2251 6.21033 17.6699V16.1047H5.22497C4.09471 16.1047 3.17846 15.2154 3.17846 14.1184V7.79133C3.17846 6.69427 4.09471 5.80493 5.22497 5.80493H9.44557V4.88791C8.77594 4.66451 8.29474 4.04784 8.29474 3.32208ZM9.40326 3.32208C9.40326 3.01313 9.66336 2.75008 10.0002 2.75008C10.337 2.75008 10.5971 3.01313 10.5971 3.32208C10.5971 3.63102 10.337 3.89407 10.0002 3.89407C9.66336 3.89407 9.40326 3.63102 9.40326 3.32208ZM5.22497 15.1116C4.65984 15.1116 4.20171 14.6669 4.20171 14.1184V7.79133C4.20171 7.2428 4.65984 6.79813 5.22497 6.79813H14.7754C15.3405 6.79813 15.7986 7.2428 15.7986 7.79133V14.1184C15.7986 14.6669 15.3405 15.1116 14.7754 15.1116H9.64122L7.23358 16.9811V15.1116H5.22497Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M18.5273 8.54175C18.8805 8.54175 19.1668 8.82157 19.1668 9.16675V11.6667C19.1668 12.0119 18.8805 12.2917 18.5273 12.2917C18.1741 12.2917 17.8878 12.0119 17.8878 11.6667V9.16675C17.8878 8.82157 18.1741 8.54175 18.5273 8.54175Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.11257 9.16675C2.11257 8.82157 1.82624 8.54175 1.47303 8.54175C1.11983 8.54175 0.833496 8.82157 0.833496 9.16675V11.6667C0.833496 12.0119 1.11983 12.2917 1.47303 12.2917C1.82624 12.2917 2.11257 12.0119 2.11257 11.6667L2.11257 9.16675Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <span>MOD/APK</span>
+                                    </button>
+                                    <div class="size-game-download">
+                                        <div class="icon-layer-block">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.2713 2.56432C10.1001 2.47872 9.89862 2.47872 9.72743 2.56432L2.83566 6.01021C2.62965 6.11321 2.49951 6.32377 2.49951 6.5541C2.49951 6.78443 2.62965 6.995 2.83566 7.098L9.72743 10.5439C9.89862 10.6295 10.1001 10.6295 10.2713 10.5439L17.1631 7.098C17.3691 6.995 17.4992 6.78443 17.4992 6.5541C17.4992 6.32377 17.3691 6.11321 17.1631 6.01021L10.2713 2.56432Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.56384 13.1741C2.71404 12.8737 3.0793 12.7519 3.37969 12.9021L9.99951 16.212L16.6193 12.9021C16.9197 12.7519 17.285 12.8737 17.4352 13.1741C17.5854 13.4744 17.4636 13.8397 17.1632 13.9899L10.2715 17.4358C10.1003 17.5214 9.89876 17.5214 9.72756 17.4358L2.83579 13.9899C2.53541 13.8397 2.41365 13.4744 2.56384 13.1741Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M3.37969 9.45622C3.0793 9.30603 2.71404 9.42779 2.56384 9.72817C2.41365 10.0286 2.53541 10.3938 2.83579 10.544L9.72756 13.9899C9.89876 14.0755 10.1003 14.0755 10.2715 13.9899L17.1632 10.544C17.4636 10.3938 17.5854 10.0286 17.4352 9.72817C17.285 9.42779 16.9197 9.30603 16.6193 9.45622L9.99951 12.7661L3.37969 9.45622Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="size-info">100MB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="game-item">
+                                <div class="main-game-item row">
+                                    <div class="col-4 image-preview">
+                                        <img src="./assets/images/image-preview-apk.png" alt="">
+                                    </div>
+                                    <div class="col-8 main-game-item-content">
+                                        <h5 class="title-apk-item">APK Diamond Heckk Mod Apk Frefir cho AndroidAPK
+                                            Diamond Heckk Mod Apk Frefir</h5>
+                                        <p class="color-gray">Ver 1.1</p>
+                                        <p class="color-gray">Thể loại: Hành động</p>
+                                        <p class="mod-game">Mod game</p>
+                                    </div>
+                                </div>
+                                <div class="line-gradient"></div>
+                                <div class="action-bottom-game-item">
+                                    <button>
+                                        <div class="icon-robot">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.44202 10.0001C6.97108 10.0001 6.58931 10.3732 6.58931 10.8334C6.58931 11.2937 6.97108 11.6667 7.44202 11.6667C7.91296 11.6667 8.29474 11.2937 8.29474 10.8334C8.29474 10.3732 7.91296 10.0001 7.44202 10.0001Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M12.5583 10.0001C12.0874 10.0001 11.7056 10.3732 11.7056 10.8334C11.7056 11.2937 12.0874 11.6667 12.5583 11.6667C13.0292 11.6667 13.411 11.2937 13.411 10.8334C13.411 10.3732 13.0292 10.0001 12.5583 10.0001Z"
+                                                    fill="white"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.29474 3.32208C8.29474 2.40786 9.05828 1.66675 10.0002 1.66675C10.942 1.66675 11.7056 2.40786 11.7056 3.32208C11.7056 4.04808 11.2241 4.66492 10.5541 4.88813V5.80493H14.7754C15.9056 5.80493 16.8219 6.69427 16.8219 7.79133V14.1184C16.8219 15.2154 15.9056 16.1047 14.7754 16.1047H10.0002L7.31865 18.1869C6.87199 18.5338 6.21033 18.2251 6.21033 17.6699V16.1047H5.22497C4.09471 16.1047 3.17846 15.2154 3.17846 14.1184V7.79133C3.17846 6.69427 4.09471 5.80493 5.22497 5.80493H9.44557V4.88791C8.77594 4.66451 8.29474 4.04784 8.29474 3.32208ZM9.40326 3.32208C9.40326 3.01313 9.66336 2.75008 10.0002 2.75008C10.337 2.75008 10.5971 3.01313 10.5971 3.32208C10.5971 3.63102 10.337 3.89407 10.0002 3.89407C9.66336 3.89407 9.40326 3.63102 9.40326 3.32208ZM5.22497 15.1116C4.65984 15.1116 4.20171 14.6669 4.20171 14.1184V7.79133C4.20171 7.2428 4.65984 6.79813 5.22497 6.79813H14.7754C15.3405 6.79813 15.7986 7.2428 15.7986 7.79133V14.1184C15.7986 14.6669 15.3405 15.1116 14.7754 15.1116H9.64122L7.23358 16.9811V15.1116H5.22497Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M18.5273 8.54175C18.8805 8.54175 19.1668 8.82157 19.1668 9.16675V11.6667C19.1668 12.0119 18.8805 12.2917 18.5273 12.2917C18.1741 12.2917 17.8878 12.0119 17.8878 11.6667V9.16675C17.8878 8.82157 18.1741 8.54175 18.5273 8.54175Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.11257 9.16675C2.11257 8.82157 1.82624 8.54175 1.47303 8.54175C1.11983 8.54175 0.833496 8.82157 0.833496 9.16675V11.6667C0.833496 12.0119 1.11983 12.2917 1.47303 12.2917C1.82624 12.2917 2.11257 12.0119 2.11257 11.6667L2.11257 9.16675Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <span>MOD/APK</span>
+                                    </button>
+                                    <div class="size-game-download">
+                                        <div class="icon-layer-block">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.2713 2.56432C10.1001 2.47872 9.89862 2.47872 9.72743 2.56432L2.83566 6.01021C2.62965 6.11321 2.49951 6.32377 2.49951 6.5541C2.49951 6.78443 2.62965 6.995 2.83566 7.098L9.72743 10.5439C9.89862 10.6295 10.1001 10.6295 10.2713 10.5439L17.1631 7.098C17.3691 6.995 17.4992 6.78443 17.4992 6.5541C17.4992 6.32377 17.3691 6.11321 17.1631 6.01021L10.2713 2.56432Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.56384 13.1741C2.71404 12.8737 3.0793 12.7519 3.37969 12.9021L9.99951 16.212L16.6193 12.9021C16.9197 12.7519 17.285 12.8737 17.4352 13.1741C17.5854 13.4744 17.4636 13.8397 17.1632 13.9899L10.2715 17.4358C10.1003 17.5214 9.89876 17.5214 9.72756 17.4358L2.83579 13.9899C2.53541 13.8397 2.41365 13.4744 2.56384 13.1741Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M3.37969 9.45622C3.0793 9.30603 2.71404 9.42779 2.56384 9.72817C2.41365 10.0286 2.53541 10.3938 2.83579 10.544L9.72756 13.9899C9.89876 14.0755 10.1003 14.0755 10.2715 13.9899L17.1632 10.544C17.4636 10.3938 17.5854 10.0286 17.4352 9.72817C17.285 9.42779 16.9197 9.30603 16.6193 9.45622L9.99951 12.7661L3.37969 9.45622Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="size-info">100MB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="game-item">
+                                <div class="main-game-item row">
+                                    <div class="col-4 image-preview">
+                                        <img src="./assets/images/image-preview-apk.png" alt="">
+                                    </div>
+                                    <div class="col-8 main-game-item-content">
+                                        <h5 class="title-apk-item">APK Diamond Heckk Mod Apk Frefir cho AndroidAPK
+                                            Diamond Heckk Mod Apk Frefir</h5>
+                                        <p class="color-gray">Ver 1.1</p>
+                                        <p class="color-gray">Thể loại: Hành động</p>
+                                        <p class="mod-game">Mod game</p>
+                                    </div>
+                                </div>
+                                <div class="line-gradient"></div>
+                                <div class="action-bottom-game-item">
+                                    <button>
+                                        <div class="icon-robot">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.44202 10.0001C6.97108 10.0001 6.58931 10.3732 6.58931 10.8334C6.58931 11.2937 6.97108 11.6667 7.44202 11.6667C7.91296 11.6667 8.29474 11.2937 8.29474 10.8334C8.29474 10.3732 7.91296 10.0001 7.44202 10.0001Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M12.5583 10.0001C12.0874 10.0001 11.7056 10.3732 11.7056 10.8334C11.7056 11.2937 12.0874 11.6667 12.5583 11.6667C13.0292 11.6667 13.411 11.2937 13.411 10.8334C13.411 10.3732 13.0292 10.0001 12.5583 10.0001Z"
+                                                    fill="white"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.29474 3.32208C8.29474 2.40786 9.05828 1.66675 10.0002 1.66675C10.942 1.66675 11.7056 2.40786 11.7056 3.32208C11.7056 4.04808 11.2241 4.66492 10.5541 4.88813V5.80493H14.7754C15.9056 5.80493 16.8219 6.69427 16.8219 7.79133V14.1184C16.8219 15.2154 15.9056 16.1047 14.7754 16.1047H10.0002L7.31865 18.1869C6.87199 18.5338 6.21033 18.2251 6.21033 17.6699V16.1047H5.22497C4.09471 16.1047 3.17846 15.2154 3.17846 14.1184V7.79133C3.17846 6.69427 4.09471 5.80493 5.22497 5.80493H9.44557V4.88791C8.77594 4.66451 8.29474 4.04784 8.29474 3.32208ZM9.40326 3.32208C9.40326 3.01313 9.66336 2.75008 10.0002 2.75008C10.337 2.75008 10.5971 3.01313 10.5971 3.32208C10.5971 3.63102 10.337 3.89407 10.0002 3.89407C9.66336 3.89407 9.40326 3.63102 9.40326 3.32208ZM5.22497 15.1116C4.65984 15.1116 4.20171 14.6669 4.20171 14.1184V7.79133C4.20171 7.2428 4.65984 6.79813 5.22497 6.79813H14.7754C15.3405 6.79813 15.7986 7.2428 15.7986 7.79133V14.1184C15.7986 14.6669 15.3405 15.1116 14.7754 15.1116H9.64122L7.23358 16.9811V15.1116H5.22497Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M18.5273 8.54175C18.8805 8.54175 19.1668 8.82157 19.1668 9.16675V11.6667C19.1668 12.0119 18.8805 12.2917 18.5273 12.2917C18.1741 12.2917 17.8878 12.0119 17.8878 11.6667V9.16675C17.8878 8.82157 18.1741 8.54175 18.5273 8.54175Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.11257 9.16675C2.11257 8.82157 1.82624 8.54175 1.47303 8.54175C1.11983 8.54175 0.833496 8.82157 0.833496 9.16675V11.6667C0.833496 12.0119 1.11983 12.2917 1.47303 12.2917C1.82624 12.2917 2.11257 12.0119 2.11257 11.6667L2.11257 9.16675Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <span>MOD/APK</span>
+                                    </button>
+                                    <div class="size-game-download">
+                                        <div class="icon-layer-block">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.2713 2.56432C10.1001 2.47872 9.89862 2.47872 9.72743 2.56432L2.83566 6.01021C2.62965 6.11321 2.49951 6.32377 2.49951 6.5541C2.49951 6.78443 2.62965 6.995 2.83566 7.098L9.72743 10.5439C9.89862 10.6295 10.1001 10.6295 10.2713 10.5439L17.1631 7.098C17.3691 6.995 17.4992 6.78443 17.4992 6.5541C17.4992 6.32377 17.3691 6.11321 17.1631 6.01021L10.2713 2.56432Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.56384 13.1741C2.71404 12.8737 3.0793 12.7519 3.37969 12.9021L9.99951 16.212L16.6193 12.9021C16.9197 12.7519 17.285 12.8737 17.4352 13.1741C17.5854 13.4744 17.4636 13.8397 17.1632 13.9899L10.2715 17.4358C10.1003 17.5214 9.89876 17.5214 9.72756 17.4358L2.83579 13.9899C2.53541 13.8397 2.41365 13.4744 2.56384 13.1741Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M3.37969 9.45622C3.0793 9.30603 2.71404 9.42779 2.56384 9.72817C2.41365 10.0286 2.53541 10.3938 2.83579 10.544L9.72756 13.9899C9.89876 14.0755 10.1003 14.0755 10.2715 13.9899L17.1632 10.544C17.4636 10.3938 17.5854 10.0286 17.4352 9.72817C17.285 9.42779 16.9197 9.30603 16.6193 9.45622L9.99951 12.7661L3.37969 9.45622Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="size-info">100MB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="game-item">
+                                <div class="main-game-item row">
+                                    <div class="col-4 image-preview">
+                                        <img src="./assets/images/image-preview-apk.png" alt="">
+                                    </div>
+                                    <div class="col-8 main-game-item-content">
+                                        <h5 class="title-apk-item">APK Diamond Heckk Mod Apk Frefir cho AndroidAPK
+                                            Diamond Heckk Mod Apk Frefir</h5>
+                                        <p class="color-gray">Ver 1.1</p>
+                                        <p class="color-gray">Thể loại: Hành động</p>
+                                        <p class="mod-game">Mod game</p>
+                                    </div>
+                                </div>
+                                <div class="line-gradient"></div>
+                                <div class="action-bottom-game-item">
+                                    <button>
+                                        <div class="icon-robot">
+                                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.44202 10.0001C6.97108 10.0001 6.58931 10.3732 6.58931 10.8334C6.58931 11.2937 6.97108 11.6667 7.44202 11.6667C7.91296 11.6667 8.29474 11.2937 8.29474 10.8334C8.29474 10.3732 7.91296 10.0001 7.44202 10.0001Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M12.5583 10.0001C12.0874 10.0001 11.7056 10.3732 11.7056 10.8334C11.7056 11.2937 12.0874 11.6667 12.5583 11.6667C13.0292 11.6667 13.411 11.2937 13.411 10.8334C13.411 10.3732 13.0292 10.0001 12.5583 10.0001Z"
+                                                    fill="white"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.29474 3.32208C8.29474 2.40786 9.05828 1.66675 10.0002 1.66675C10.942 1.66675 11.7056 2.40786 11.7056 3.32208C11.7056 4.04808 11.2241 4.66492 10.5541 4.88813V5.80493H14.7754C15.9056 5.80493 16.8219 6.69427 16.8219 7.79133V14.1184C16.8219 15.2154 15.9056 16.1047 14.7754 16.1047H10.0002L7.31865 18.1869C6.87199 18.5338 6.21033 18.2251 6.21033 17.6699V16.1047H5.22497C4.09471 16.1047 3.17846 15.2154 3.17846 14.1184V7.79133C3.17846 6.69427 4.09471 5.80493 5.22497 5.80493H9.44557V4.88791C8.77594 4.66451 8.29474 4.04784 8.29474 3.32208ZM9.40326 3.32208C9.40326 3.01313 9.66336 2.75008 10.0002 2.75008C10.337 2.75008 10.5971 3.01313 10.5971 3.32208C10.5971 3.63102 10.337 3.89407 10.0002 3.89407C9.66336 3.89407 9.40326 3.63102 9.40326 3.32208ZM5.22497 15.1116C4.65984 15.1116 4.20171 14.6669 4.20171 14.1184V7.79133C4.20171 7.2428 4.65984 6.79813 5.22497 6.79813H14.7754C15.3405 6.79813 15.7986 7.2428 15.7986 7.79133V14.1184C15.7986 14.6669 15.3405 15.1116 14.7754 15.1116H9.64122L7.23358 16.9811V15.1116H5.22497Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M18.5273 8.54175C18.8805 8.54175 19.1668 8.82157 19.1668 9.16675V11.6667C19.1668 12.0119 18.8805 12.2917 18.5273 12.2917C18.1741 12.2917 17.8878 12.0119 17.8878 11.6667V9.16675C17.8878 8.82157 18.1741 8.54175 18.5273 8.54175Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.11257 9.16675C2.11257 8.82157 1.82624 8.54175 1.47303 8.54175C1.11983 8.54175 0.833496 8.82157 0.833496 9.16675V11.6667C0.833496 12.0119 1.11983 12.2917 1.47303 12.2917C1.82624 12.2917 2.11257 12.0119 2.11257 11.6667L2.11257 9.16675Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <span>MOD/APK</span>
+                                    </button>
+                                    <div class="size-game-download">
+                                        <div class="icon-layer-block">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.2713 2.56432C10.1001 2.47872 9.89862 2.47872 9.72743 2.56432L2.83566 6.01021C2.62965 6.11321 2.49951 6.32377 2.49951 6.5541C2.49951 6.78443 2.62965 6.995 2.83566 7.098L9.72743 10.5439C9.89862 10.6295 10.1001 10.6295 10.2713 10.5439L17.1631 7.098C17.3691 6.995 17.4992 6.78443 17.4992 6.5541C17.4992 6.32377 17.3691 6.11321 17.1631 6.01021L10.2713 2.56432Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M2.56384 13.1741C2.71404 12.8737 3.0793 12.7519 3.37969 12.9021L9.99951 16.212L16.6193 12.9021C16.9197 12.7519 17.285 12.8737 17.4352 13.1741C17.5854 13.4744 17.4636 13.8397 17.1632 13.9899L10.2715 17.4358C10.1003 17.5214 9.89876 17.5214 9.72756 17.4358L2.83579 13.9899C2.53541 13.8397 2.41365 13.4744 2.56384 13.1741Z"
+                                                    fill="white"></path>
+                                                <path
+                                                    d="M3.37969 9.45622C3.0793 9.30603 2.71404 9.42779 2.56384 9.72817C2.41365 10.0286 2.53541 10.3938 2.83579 10.544L9.72756 13.9899C9.89876 14.0755 10.1003 14.0755 10.2715 13.9899L17.1632 10.544C17.4636 10.3938 17.5854 10.0286 17.4352 9.72817C17.285 9.42779 16.9197 9.30603 16.6193 9.45622L9.99951 12.7661L3.37969 9.45622Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="size-info">100MB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -277,6 +786,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9238eff31b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 
