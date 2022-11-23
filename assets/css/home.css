@@ -312,4 +312,10 @@ main .contain-1 .update-free {
 
 .accordion button{
      border: none !important;
+     outline: none !important;
+     background-color: var(--color-system) !important;
+}
+
+.accordion .accordion-item {
+    border: none;
 }
