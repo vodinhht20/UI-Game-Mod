@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +21,7 @@
 }
 
 .page-post-blogs .line-gradient {
-    width: 1204.03px;
+    width: 100%;
     height: 4px;
     background: radial-gradient(50% 50% at 50% 50%, #939DB5 0%, rgba(255, 255, 255, 0) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -28,7 +29,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 20px 0;
+    margin: 12px 0;
 }
 
 .page-post-blogs .description-title {
@@ -125,7 +126,7 @@
 }
 
 .page-post-blogs .post-blog .content-post {
-    margin: 25px 0px;
+    margin: 25px 0px 10px 0px;
 }
 
 .page-post-blogs .post-blog .content-post .title-content-post {
@@ -135,5 +136,152 @@
 }
 
 .page-post-blogs .post-blog .content-post .desc-content-post {
+    margin: 10px 0px 5px 0px;
+}
+
+.page-post-blogs .post-blog .content-post .more {
+    display: none;
+}
+
+
+/* Like blog */
+
+.page-post-blogs .post-blog .like-post {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page-post-blogs .post-blog .like-post .item-like {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.page-post-blogs .post-blog .like-post .item-like p {
+    margin: 0 0px 0px 7px;
+    padding: 0;
+}
+
+.page-post-blogs .post-blog .like-post .item-like~.comment p,
+svg {
+    font-size: 16px;
+    color: #F47532;
+}
+
+
+/* Comment post */
+
+.page-post-blogs .post-blog .comment-post {
     margin: 10px 0px;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 17px;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .avata-user-comment {
+    width: 6vh;
+    margin-right: 15px;
+    position: relative;
+    height: min-content;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .avata-user-comment button {
+    background-color: #34C759;
+    padding: 4px;
+    border-radius: 100%;
+    border: 1px solid white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .avata-user-comment img {
+    border-radius: 100%;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment {
+    width: 90%;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .title-comment {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .title-comment p {
+    font-weight: 700;
+    padding: 0;
+    margin: 0 15px 0px 0px;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .title-comment li {
+    color: #ffffffc6;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .content-user-comment .desc-comment {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0px 5px 0px;
+    padding: 0;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .content-user-comment .like-view-comment {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .content-user-comment .like-view-comment .item-like {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 7px;
+    border-radius: 15px;
+}
+
+.page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .content-user-comment .like-view-comment .item-like p {
+    margin: 0;
+    padding: 0px 0px 0px 5px;
+    color: #000000;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .page-post-blogs .post-blog .content-post .desc-content-post {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .page-post-blogs .post-blog .content-post .more {
+        display: block;
+        color: #F47532;
+        text-decoration: none;
+    }
+    .page-post-blogs .post-blog .content-post P {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .page-post-blogs .post-blog .like-post {
+        display: flex;
+        justify-content: space-between;
+    }
+    .page-post-blogs .post-blog .like-post .item-like {
+        margin: 0;
+    }
 }
