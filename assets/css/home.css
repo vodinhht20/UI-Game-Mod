@@ -290,8 +290,70 @@ main .contain-1 .update-free {
     background: linear-gradient(271.56deg, rgba(0, 198, 234, 0.6) 2.9%, rgba(5, 211, 248, 0) 64.84%), linear-gradient(185.22deg, #4CE9F6 3.46%, #05D3F8 85.81%);
     border-radius: 16px;
     margin: 20px auto 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
+.bg-start {
+    position: absolute;
+    right: 31px;
+    bottom: 0;
+}
+
+.bg-start2 {
+    position: absolute;
+    right: 143px;
+    bottom: 0;
+}
+
+.bg-ro {
+    position: absolute;
+    right: 19px;
+    top: 0;
+}
+
+.start-fill {
+    position: absolute;
+    left: 35px;
+    top: 18px;
+}
+.sto {
+    position: absolute;
+    left: 15%;
+    top: 18px;
+}
+.sto:nth-child(2) {
+    position: absolute;
+    left: 25%;
+    top: 18px;
+}
+.sto:nth-child(3) {
+    position: absolute;
+    left: 35%;
+    top: 50px;
+}
+
+.sto:nth-child(4) {
+    position: absolute;
+    left: 45%;
+    top: 80px;
+}
+
+.sto:nth-child(5) {
+    position: absolute;
+    left: 65%;
+    top: 85px;
+}
+.sto:nth-child(6) {
+    position: absolute;
+    left: 85%;
+    top: 97px;
+}
+.add-bg {
+    position: absolute;
+    right: 38px;
+    top: 17px;
+}
 @media (min-width: 768px) {
     .article-features {
         width: 100%;
