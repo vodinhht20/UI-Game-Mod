@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif;
-}
-
 :root {
     --color-system: #1C1E2D;
     --color-background: #0D0F1E;
@@ -14,8 +7,178 @@
     --color-join: #262F41;
 }
 
+body {
+    background-color: var(--color-background) !important;
+}
 
-/* Header */
+nav.navbar.navbar-expand-lg.bg-light {
+    background-color: var(--color-system) !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title-sand {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.navbar-toggler {
+    background-color: var(--color-mojang) !important;
+}
+
+.navbar-toggler-icon.menu-mobile {
+    background-image: url('/assets/images/icon-menu.png');
+}
+
+
+/* icon */
+
+.icon-search {
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(/assets/images/icon-search.png);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    left: 2.5px;
+    top: 2.5px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.icon-time {
+    background-image: url(/assets/images/icon-time.png);
+}
+
+.icon-coin {
+    background-image: url(/assets/images/icon-coin.png);
+}
+
+.icon-star {
+    background-image: url(/assets/images/icon-star.png);
+}
+
+.icon-union {
+    background-image: url(/assets/images/icon-union.png);
+}
+
+.icon-arcade {
+    background-image: url(/assets/images/icon-arcade.png);
+}
+
+.icon-store {
+    background-image: url(/assets/images/icon-store.png);
+}
+
+.icon-code {
+    background-image: url(/assets/images/icon-code.png);
+}
+
+.icon-check {
+    background-image: url(/assets/images/icon-check.png);
+    height: 22px;
+    width: 22px;
+}
+
+.icon-download {
+    background-image: url(/assets/images/icon-download.png);
+    height: 22px;
+    width: 22px;
+}
+
+
+/* button */
+
+.btn-system {
+    background-color: var(--color-system);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btn-join {
+    background-color: var(--color-join);
+}
+
+.btn-action {
+    background-color: var(--color-mojang) !important;
+    box-shadow: 0px 4px 4px rgb(211 211 211 / 25%);
+    border-radius: 8px;
+    width: 162px;
+    height: 49px;
+}
+
+h2.title-head {
+    width: auto;
+    height: 32px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    text-align: center;
+    color: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    flex-grow: 0;
+    margin: 0;
+}
+
+.nav-bar-menu-pc ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-bar-menu-pc ul a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-bar-menu-pc ul li {
+    border: 0;
+    padding: 13px 15px 10px 0px;
+    list-style: none;
+}
+
+.nav-bar-menu-pc ul .active {
+    border-bottom: 2px solid #F47532;
+    color: white;
+    font-weight: 700;
+}
+
+.search #search-input {
+    height: 32px;
+    min-height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    width: 400px;
+    margin: 10px auto 0 auto;
+    padding-left: 40px;
+    color: #fff;
+    outline: none;
+    position: relative;
+    background: url(/assets/images/icon-search.png) no-repeat;
+    background-position: 10px center;
+}
 
 .menu-mobile {
     position: relative;
@@ -365,149 +528,6 @@
 
 .menu-pc .dropdown-menu .nav-link {
     color: var(--color-white) !important;
-}
-
-nav.navbar.navbar-expand-lg.bg-light {
-    background-color: var(--color-system) !important;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.title-sand {
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.navbar-toggler {
-    background-color: var(--color-mojang) !important;
-}
-
-.navbar-toggler-icon.menu-mobile {
-    background-image: url('/assets/images/icon-menu.png');
-}
-
-
-/* icon */
-
-.icon-search {
-    background: rgba(255, 255, 255, 0.1);
-    background-image: url(/assets/images/icon-search.png);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
-    border-radius: 8px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon {
-    width: 15px;
-    height: 15px;
-    left: 2.5px;
-    top: 2.5px;
-    display: inline-block;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: auto;
-}
-
-.icon-time {
-    background-image: url(/assets/images/icon-time.png);
-}
-
-.icon-coin {
-    background-image: url(/assets/images/icon-coin.png);
-}
-
-.icon-star {
-    background-image: url(/assets/images/icon-star.png);
-}
-
-.icon-union {
-    background-image: url(/assets/images/icon-union.png);
-}
-
-.icon-arcade {
-    background-image: url(/assets/images/icon-arcade.png);
-}
-
-.icon-store {
-    background-image: url(/assets/images/icon-store.png);
-}
-
-.icon-code {
-    background-image: url(/assets/images/icon-code.png);
-}
-
-.icon-check {
-    background-image: url(/assets/images/icon-check.png);
-    height: 22px;
-    width: 22px;
-}
-
-.icon-download {
-    background-image: url(/assets/images/icon-download.png);
-    height: 22px;
-    width: 22px;
-}
-
-.btn-system {
-    background-color: var(--color-system);
-    padding: 5px;
-    border-radius: 4px;
-}
-
-.btn-join {
-    background-color: var(--color-join);
-}
-
-.btn-action {
-    background-color: var(--color-mojang) !important;
-    box-shadow: 0px 4px 4px rgb(211 211 211 / 25%);
-    border-radius: 8px;
-    width: 162px;
-    height: 49px;
-}
-
-h2.title-head {
-    width: auto;
-    height: 32px;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 32px;
-    /* identical to box height, or 160% */
-    text-align: center;
-    color: #FFFFFF;
-    /* Inside auto layout */
-    flex: none;
-    flex-grow: 0;
-    margin: 0;
-}
-
-.nav-bar-menu-pc ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.nav-bar-menu-pc ul li {
-    border: 0;
-    padding: 13px 15px 10px 0px;
-}
-
-.nav-bar-menu-pc ul .action {
-    border-bottom: 1.5px solid #F47532;
 }
 
 
