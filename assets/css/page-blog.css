@@ -664,7 +664,6 @@ h2.title-head {
 
 .page-blogs .post-blog {
     background-color: #1C1E2D;
-    padding: 15px 30px;
     margin: 25px 0px;
     color: white;
     border-radius: 15px;
@@ -730,6 +729,14 @@ h2.title-head {
     display: none;
 }
 
+.page-blogs .post-blog .comment-post {
+    display: none;
+}
+
+.page-blogs .post-blog .comment-post-action {
+    display: block;
+}
+
 
 /* Like blog */
 
@@ -776,10 +783,9 @@ svg {
 }
 
 .page-blogs .post-blog .comment-post .item-comment .avata-user-comment {
-    width: 6vh;
-    margin-right: 15px;
     position: relative;
     height: min-content;
+    width: 5%;
 }
 
 .page-blogs .post-blog .comment-post .item-comment .avata-user-comment button {
@@ -794,16 +800,19 @@ svg {
 
 .page-blogs .post-blog .comment-post .item-comment .avata-user-comment img {
     border-radius: 100%;
+    min-width: 100%;
 }
 
 .page-blogs .post-blog .comment-post .item-comment .detail-user-comment {
-    width: 90%;
+    width: 95%;
+    padding-left: 10px;
 }
 
 .page-blogs .post-blog .comment-post .item-comment .detail-user-comment .title-comment {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .page-blogs .post-blog .comment-post .item-comment .detail-user-comment .title-comment .name {
@@ -843,7 +852,6 @@ svg {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 15px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 2px 7px;
     border-radius: 15px;
@@ -877,14 +885,6 @@ svg {
 
 .page-blogs .post-blog .comment-post .item-comment .detail-user-comment .content-user-comment .like-view-comment .item-like~.reply .icon svg {
     margin: auto 0;
-}
-
-.page-blogs .post-blog .comment-post {
-    display: none;
-}
-
-.page-blogs .post-blog .comment-post-action {
-    display: block !important;
 }
 
 
@@ -930,6 +930,12 @@ svg {
         text-overflow: ellipsis;
         margin: 10px 0px 5px 0px;
         padding: 0;
+    }
+    .page-blogs .post-blog .comment-post .item-comment .avata-user-comment {
+        width: 10%;
+    }
+    .page-blogs .post-blog .comment-post .item-comment .detail-user-comment {
+        width: 90%;
     }
 }
 

@@ -711,10 +711,9 @@ svg {
 }
 
 .page-post-blogs .post-blog .comment-post .item-comment .avata-user-comment {
-    width: 6vh;
-    margin-right: 15px;
     position: relative;
     height: min-content;
+    width: 5%;
 }
 
 .page-post-blogs .post-blog .comment-post .item-comment .avata-user-comment button {
@@ -729,16 +728,19 @@ svg {
 
 .page-post-blogs .post-blog .comment-post .item-comment .avata-user-comment img {
     border-radius: 100%;
+    min-width: 100%;
 }
 
 .page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment {
-    width: 90%;
+    width: 95%;
+    padding-left: 10px;
 }
 
 .page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .title-comment {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment .title-comment .name {
@@ -919,6 +921,12 @@ svg {
         text-overflow: ellipsis;
         margin: 10px 0px 5px 0px;
         padding: 0;
+    }
+    .page-post-blogs .post-blog .comment-post .item-comment .avata-user-comment {
+        width: 10%;
+    }
+    .page-post-blogs .post-blog .comment-post .item-comment .detail-user-comment {
+        width: 90%;
     }
 }
 
