@@ -155,17 +155,40 @@ h2.title-head {
     justify-content: flex-start;
 }
 
+.nav-bar-menu-pc ul a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .nav-bar-menu-pc ul li {
     border: 0;
     padding: 13px 15px 10px 0px;
+    list-style: none;
 }
 
-.nav-bar-menu-pc ul .action {
-    border-bottom: 1.5px solid #F47532;
+.nav-bar-menu-pc ul .active {
+    border-bottom: 2px solid #F47532;
+    color: white;
+    font-weight: 700;
+}
+
+.search #search-input {
+    height: 32px;
+    min-height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    width: 400px;
+    margin: 10px auto 0 auto;
+    padding-left: 40px;
+    color: #fff;
+    outline: none;
+    position: relative;
+    background: url(/assets/images/icon-search.png) no-repeat;
+    background-position: 10px center;
 }
 
 
-/* End heade */
+/* End header */
 
 
 /* main */
@@ -512,6 +535,9 @@ main .contain-1 .update-free {
     color: #F47532;
     font-weight: bold;
 }
+
+
+/* Menu moblie */
 
 .menu-mobile {
     position: relative;
