@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 :root {
     --color-system: #1C1E2D;
     --color-background: #0D0F1E;
@@ -22,6 +23,12 @@ nav.navbar.navbar-expand-lg.bg-light {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+}
+
+@media (min-width: 768px) {
+    .title-sand {
+        font-size: 30px;
+    }
 }
 
 .navbar-toggler {
@@ -183,6 +190,20 @@ main .contain-1 {
     margin: auto;
 }
 
+@media (min-width: 768px) {
+    .main .contain-1 {
+        margin: 30px 0;
+    }
+
+    .main .contain-1 img {
+        max-width: 270px;
+    }
+
+    .main .contain-1 .content div {
+        padding: 10px 0;
+    }
+}
+
 .contain-1 .content .title-version,
 main .contain-1 .update-free {
     display: flex;
@@ -190,7 +211,8 @@ main .contain-1 .update-free {
     align-items: center;
 }
 
-.contain-2 .contain-art {
+.contain-2 .contain-art,
+.contain-1 .contain-art {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,8 +222,19 @@ main .contain-1 .update-free {
     font-weight: 600;
 }
 
-.contain-2 .contain-art.color-yellow {
+.contain-1 .contain-art {
+    margin: 0;
+    padding: 0;
+}
+
+.contain-2 .contain-art.color-yellow,
+.contain-1 .contain-art.color-yellow {
     color: var(--color-mojang);
+}
+
+.contain-1 .contain-art.color-yellow {
+    display: flex;
+    justify-content: space-between;
 }
 
 .rectangle-line {
@@ -224,6 +257,19 @@ main .contain-1 .update-free {
     margin: 20px auto 0 auto;
 }
 
+@media (min-width: 768px) {
+    .article-features {
+        width: 100%;
+        height: 100%;
+        min-height: 180px;
+        max-width: 500px;
+    }
+    .banner-and-detail {
+        flex-direction: row-reverse;
+        max-width: 100%;
+    }
+}
+
 .article-features .title {
     color: var(--color-background);
     margin: auto;
@@ -235,10 +281,11 @@ main .contain-1 .update-free {
 
 .article-btn {
     display: flex;
-    width: 100%;
     flex-direction: column;
     padding: 0 20px;
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .article-btn .download {
@@ -263,6 +310,7 @@ main .contain-1 .update-free {
     font-weight: 600;
     display: flex;
     align-items: center;
+    max-width: 472px;
 }
 
 .article-btn .join-telegram span {
@@ -276,6 +324,13 @@ main .contain-1 .update-free {
     margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+    .article-text {
+        font-size: 25px;
+        padding: 26px 20px;
+    }
+}
+
 .carousel-indicators [data-bs-target] {
     width: 8px !important;
     height: 8px !important;
@@ -284,6 +339,12 @@ main .contain-1 .update-free {
 
 .carousel-indicators {
     bottom: -3rem !important;
+}
+
+@media (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 0rem !important;
+    }
 }
 
 .carousel-indicators .active {
@@ -300,6 +361,14 @@ main .contain-1 .update-free {
     background: var(--color-system);
     width: 354px;
     height: auto;
+}
+
+@media (min-width: 768px) {
+    .features-2 {
+        width: 100%;
+        max-height: 368px;
+        max-width: 47%;
+    }
 }
 
 .features-2 .title,
@@ -846,23 +915,29 @@ main .contain-1 .update-free {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .footer .list-nav-footer .nav-item {
         padding: unset;
         font-size: 14px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(1) {
         padding-right: 18px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(3) {
         padding-left: 18px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(2) {
         padding: 0 18px;
     }
+
     .footer .logo-footer svg {
         width: 150px;
         height: 40px;
     }
+
     .footer .list-social-network-icon .social-icon svg {
         width: 30px;
         height: 30px;
@@ -874,29 +949,37 @@ main .contain-1 .update-free {
         width: 150px;
         height: 40px;
     }
+
     .footer {
         padding-bottom: 10px;
     }
+
     .footer .list-social-network-icon .social-icon svg {
         width: 25px;
         height: 25px;
         grid-column-gap: 10px;
     }
+
     .footer .list-nav-footer .nav-item {
         font-size: 13px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(1) {
         padding-right: 10px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(3) {
         padding-left: 10px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(2) {
         padding: 0 10px;
     }
+
     .footer .copy-right {
         display: none;
     }
+
     .footer .list-nav-footer {
         margin: 24px 0;
     }
