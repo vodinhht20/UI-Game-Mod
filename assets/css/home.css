@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
 :root {
     --color-system: #1C1E2D;
     --color-background: #0D0F1E;
@@ -32,6 +31,7 @@ nav.navbar.navbar-expand-lg.bg-light {
 .navbar-toggler-icon.menu-mobile {
     background-image: url('/assets/images/icon-menu.png');
 }
+
 
 /* icon */
 
@@ -103,6 +103,7 @@ nav.navbar.navbar-expand-lg.bg-light {
     width: 22px;
 }
 
+
 /* button */
 
 .btn-system {
@@ -140,7 +141,9 @@ h2.title-head {
     margin: 0;
 }
 
+
 /* main */
+
 .main {
     font-family: 'Quicksand';
     color: #FFFFFF;
@@ -561,7 +564,9 @@ main .contain-1 .update-free {
     width: 5px;
 }
 
+
 /* Track */
+
 .menu-search ::-webkit-scrollbar-track {
     margin: 7px 0;
     background: transparent;
@@ -569,13 +574,17 @@ main .contain-1 .update-free {
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+
 /* Handle */
+
 .menu-search ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
 
+
 /* Handle on hover */
+
 .menu-search ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -695,10 +704,12 @@ main .contain-1 .update-free {
     font-weight: 700;
     overflow: hidden;
 }
+
 .menu-pc .user-info {
     display: inline-flex;
     align-items: center;
 }
+
 .menu-pc .avatar img {
     width: 100%;
 }
@@ -720,15 +731,17 @@ main .contain-1 .update-free {
     margin-left: 12px;
 }
 
-.list-menu-sidebar-mobile li:hover, .list-menu-sidebar-mobile li:hover> svg>path {
+.list-menu-sidebar-mobile li:hover,
+.list-menu-sidebar-mobile li:hover>svg>path {
     color: var(--color-mojang);
     fill: var(--color-mojang) !important;
 }
 
 .head-top {
     color: var(--color-white);
-    background-color: transparent !important;
+    background-color: var(--color-system) !important;
 }
+
 .head-top .nav-link {
     color: var(--color-white) !important;
 }
@@ -741,17 +754,20 @@ main .contain-1 .update-free {
 .menu-pc .logo {
     flex: 1;
 }
+
 .logo h4 {
     margin: auto;
     margin-left: 15px;
     padding: 0;
 }
-.menu-pc .dropdown-menu[data-bs-popper]{
+
+.menu-pc .dropdown-menu[data-bs-popper] {
     right: 0 !important;
     background-color: #0D0F1E;
 }
 
-.menu-pc span, .menu-pc a {
+.menu-pc span,
+.menu-pc a {
     color: var(--color-white) !important;
 }
 
