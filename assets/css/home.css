@@ -200,6 +200,18 @@ h2.title-head {
 
 main .banner {
     margin: 25px 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    main .banner {
+        margin: 25px 0;
+    }
+
+    main .banner.pc {
+        margin: 25px 0;
+        width: 730px;
+    }
 }
 
 main .contain-1 {
@@ -287,6 +299,12 @@ main .contain-1 .update-free {
         min-height: 180px;
         max-width: 500px;
     }
+
+    .article-features.full {
+        max-width: 100%;
+        width: 100%;
+    }
+
     .banner-and-detail {
         flex-direction: row-reverse;
         max-width: 100%;
@@ -348,6 +366,9 @@ main .contain-1 .update-free {
 }
 
 @media (min-width: 768px) {
+    .article-btn {
+        padding: 0;
+    }
     .article-text {
         font-size: 25px;
         padding: 26px 20px;
@@ -389,8 +410,8 @@ main .contain-1 .update-free {
 @media (min-width: 768px) {
     .features-2 {
         width: 100%;
-        max-height: 368px;
-        max-width: 47%;
+        max-height: 356px;
+        max-width: 45%;
     }
 }
 
@@ -424,6 +445,13 @@ main .contain-1 .update-free {
     height: auto;
 }
 
+@media (min-width: 768px) {
+    .features-3 {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 .accordion-button:not(.collapsed) {
     background-color: var(--color-system) !important;
     color: var(--color-mojang) !important;
@@ -455,6 +483,30 @@ main .contain-1 .update-free {
     border-radius: 8px;
     padding: 10px;
     transition: 0.2s;
+}
+.game-item .main-game-item-content {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 4px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-weight: 600;
+}
+.game-item .title-apk-item {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 4px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-weight: 600;
 }
 
 .main-game-item {
@@ -1009,4 +1061,124 @@ main .contain-1 .update-free {
     .footer .list-nav-footer {
         margin: 24px 0;
     }
+}
+
+.main-game-item .image-preview {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main-game-item .image-preview img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+}
+
+.wrapper-tabs .main-game-item {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.tab-wrap-content .game-item {
+    background: #1C1E2D;
+    border-radius: 8px;
+    padding: 18px;
+    transition: 0.2s;
+}
+
+.tab-wrap-content .game-item:hover {
+    box-shadow: 1px 1px 7px 2px #cfc3c304;
+}
+
+.main-game-item-content .title-apk-item {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 4px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-weight: 600;
+}
+
+.main-game-item {
+    margin-left: unset;
+    margin-right: unset;
+    flex-wrap: unset;
+    grid-column-gap: 15px;
+    display: flex;
+}
+
+.main-game-item-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main-game-item-content .color-gray {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.main-game-item-content p {
+    margin-bottom: 4px;
+}
+
+.main-game-item-content .mod-game {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.action-bottom-game-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-bottom-game-item button {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-bottom-game-item button:hover {
+    opacity: 0.9;
+}
+
+.action-bottom-game-item button .icon-robot {
+    width: 21px;
+    height: 21px;
+}
+
+.action-bottom-game-item button {
+    background: linear-gradient(271.56deg, rgba(0, 198, 234, 0.6) 2.9%, rgba(5, 211, 248, 0) 64.84%), linear-gradient(185.22deg, #4CE9F6 3.46%, #05D3F8 85.81%);
+    border-radius: 8px;
+    width: 111px;
+    height: 29px;
+    border: unset;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.title-sand.fix {
+    margin: 22px;
+    text-align: center;
+}
+
+.title-sand.fix::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/images/hr.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    bottom: -2rem;
+    width: 100%;
+    left: 0;
+    height: 10px;
+    background-size: 100% 100%;
 }
