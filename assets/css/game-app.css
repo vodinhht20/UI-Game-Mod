@@ -493,6 +493,22 @@ h2.title-head {
     margin: 0;
 }
 
+.nav-bar-menu-pc ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-bar-menu-pc ul li {
+    border: 0;
+    padding: 13px 15px 10px 0px;
+}
+
+.nav-bar-menu-pc ul .action {
+    border-bottom: 1.5px solid #F47532;
+}
+
 
 /* End header */
 
