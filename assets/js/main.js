@@ -1,8 +1,3 @@
-/*!
- * Bootstrap v5.0.2 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 (function(global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
         typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
@@ -32,18 +27,7 @@
 
     var Popper__namespace = /*#__PURE__*/ _interopNamespace(Popper);
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): dom/selector-engine.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
 
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
     const NODE_TEXT = 3;
     const SelectorEngine = {
         find(selector, element = document.documentElement) {
@@ -103,12 +87,6 @@
 
     };
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): util/index.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
 
     const MAX_UID = 1000000;
     const MILLISECONDS_MULTIPLIER = 1000;
@@ -121,11 +99,6 @@
 
         return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase();
     };
-    /**
-     * --------------------------------------------------------------------------
-     * Public Util Api
-     * --------------------------------------------------------------------------
-     */
 
 
     const getUID = prefix => {
@@ -141,9 +114,6 @@
 
         if (!selector || selector === '#') {
             let hrefAttr = element.getAttribute('href'); // The only valid content that could double as a selector are IDs or classes,
-            // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
-            // `document.querySelector` will rightfully complain it is invalid.
-            // See https://github.com/twbs/bootstrap/issues/32273
 
             if (!hrefAttr || !hrefAttr.includes('#') && !hrefAttr.startsWith('.')) {
                 return null;
@@ -403,17 +373,6 @@
         return list[Math.max(0, Math.min(index, listLength - 1))];
     };
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): dom/event-handler.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
 
     const namespaceRegex = /[^.]*(?=\..*)\.|.*/;
     const stripNameRegex = /\..*/;
@@ -427,11 +386,7 @@
     };
     const customEventsRegex = /^(mouseenter|mouseleave)/i;
     const nativeEvents = new Set(['click', 'dblclick', 'mouseup', 'mousedown', 'contextmenu', 'mousewheel', 'DOMMouseScroll', 'mouseover', 'mouseout', 'mousemove', 'selectstart', 'selectend', 'keydown', 'keypress', 'keyup', 'orientationchange', 'touchstart', 'touchmove', 'touchend', 'touchcancel', 'pointerdown', 'pointermove', 'pointerup', 'pointerleave', 'pointercancel', 'gesturestart', 'gesturechange', 'gestureend', 'focus', 'blur', 'change', 'reset', 'select', 'submit', 'focusin', 'focusout', 'load', 'unload', 'beforeunload', 'resize', 'move', 'DOMContentLoaded', 'readystatechange', 'error', 'abort', 'scroll']);
-    /**
-     * ------------------------------------------------------------------------
-     * Private methods
-     * ------------------------------------------------------------------------
-     */
+
 
     function getUidEvent(element, uid) {
         return uid && `${uid}::${uidEvent++}` || element.uidEvent || uidEvent++;
@@ -692,18 +647,7 @@
 
     };
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): dom/data.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
 
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
     const elementMap = new Map();
     var Data = {
         set(element, key, instance) {
@@ -746,17 +690,7 @@
 
     };
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): base-component.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
+
 
     const VERSION = '5.0.2';
 
@@ -812,17 +746,7 @@
 
     }
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): alert.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
+
 
     const NAME$c = 'alert';
     const DATA_KEY$b = 'bs.alert';
@@ -835,11 +759,7 @@
     const CLASS_NAME_ALERT = 'alert';
     const CLASS_NAME_FADE$6 = 'fade';
     const CLASS_NAME_SHOW$9 = 'show';
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
+
 
     class Alert extends BaseComponent {
         // Getters
@@ -903,34 +823,15 @@
         }
 
     }
-    /**
-     * ------------------------------------------------------------------------
-     * Data Api implementation
-     * ------------------------------------------------------------------------
-     */
+
 
 
     EventHandler.on(document, EVENT_CLICK_DATA_API$7, SELECTOR_DISMISS, Alert.handleDismiss(new Alert()));
-    /**
-     * ------------------------------------------------------------------------
-     * jQuery
-     * ------------------------------------------------------------------------
-     * add .Alert to jQuery only if jQuery is present
-     */
+
 
     defineJQueryPlugin(Alert);
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): button.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
+
 
     const NAME$b = 'button';
     const DATA_KEY$a = 'bs.button';
@@ -939,11 +840,7 @@
     const CLASS_NAME_ACTIVE$3 = 'active';
     const SELECTOR_DATA_TOGGLE$5 = '[data-bs-toggle="button"]';
     const EVENT_CLICK_DATA_API$6 = `click${EVENT_KEY$a}${DATA_API_KEY$7}`;
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
+
 
     class Button extends BaseComponent {
         // Getters
@@ -969,11 +866,7 @@
         }
 
     }
-    /**
-     * ------------------------------------------------------------------------
-     * Data Api implementation
-     * ------------------------------------------------------------------------
-     */
+
 
 
     EventHandler.on(document, EVENT_CLICK_DATA_API$6, SELECTOR_DATA_TOGGLE$5, event => {
@@ -982,21 +875,11 @@
         const data = Button.getOrCreateInstance(button);
         data.toggle();
     });
-    /**
-     * ------------------------------------------------------------------------
-     * jQuery
-     * ------------------------------------------------------------------------
-     * add .Button to jQuery only if jQuery is present
-     */
+
 
     defineJQueryPlugin(Button);
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): dom/manipulator.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
+
     function normalizeData(val) {
         if (val === 'true') {
             return true;
@@ -1065,17 +948,7 @@
 
     };
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): carousel.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
+
 
     const NAME$a = 'carousel';
     const DATA_KEY$9 = 'bs.carousel';
@@ -1586,11 +1459,6 @@
         }
 
     }
-    /**
-     * ------------------------------------------------------------------------
-     * Data Api implementation
-     * ------------------------------------------------------------------------
-     */
 
 
     EventHandler.on(document, EVENT_CLICK_DATA_API$5, SELECTOR_DATA_SLIDE, Carousel.dataApiClickHandler);
@@ -1601,26 +1469,10 @@
             Carousel.carouselInterface(carousels[i], Carousel.getInstance(carousels[i]));
         }
     });
-    /**
-     * ------------------------------------------------------------------------
-     * jQuery
-     * ------------------------------------------------------------------------
-     * add .Carousel to jQuery only if jQuery is present
-     */
 
     defineJQueryPlugin(Carousel);
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): collapse.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
+
 
     const NAME$9 = 'collapse';
     const DATA_KEY$8 = 'bs.collapse';
@@ -1647,11 +1499,6 @@
     const HEIGHT = 'height';
     const SELECTOR_ACTIVES = '.show, .collapsing';
     const SELECTOR_DATA_TOGGLE$4 = '[data-bs-toggle="collapse"]';
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
 
     class Collapse extends BaseComponent {
         constructor(element, config) {
@@ -1956,26 +1803,11 @@
             Collapse.collapseInterface(element, config);
         });
     });
-    /**
-     * ------------------------------------------------------------------------
-     * jQuery
-     * ------------------------------------------------------------------------
-     * add .Collapse to jQuery only if jQuery is present
-     */
+
 
     defineJQueryPlugin(Collapse);
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): dropdown.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
+
 
     const NAME$8 = 'dropdown';
     const DATA_KEY$7 = 'bs.dropdown';
@@ -2546,12 +2378,7 @@
 
     }
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): util/backdrop.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-     * --------------------------------------------------------------------------
-     */
+
     const Default$6 = {
         isVisible: true,
         // if false, we use the backdrop helper without adding any element to the dom
@@ -2669,17 +2496,7 @@
 
     }
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): modal.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
+
 
     const NAME$6 = 'modal';
     const DATA_KEY$6 = 'bs.modal';
@@ -4549,36 +4366,14 @@
         }
 
     }
-    /**
-     * ------------------------------------------------------------------------
-     * Data Api implementation
-     * ------------------------------------------------------------------------
-     */
 
 
     EventHandler.on(window, EVENT_LOAD_DATA_API, () => {
         SelectorEngine.find(SELECTOR_DATA_SPY).forEach(spy => new ScrollSpy(spy));
     });
-    /**
-     * ------------------------------------------------------------------------
-     * jQuery
-     * ------------------------------------------------------------------------
-     * add .ScrollSpy to jQuery only if jQuery is present
-     */
 
     defineJQueryPlugin(ScrollSpy);
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): tab.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Constants
-     * ------------------------------------------------------------------------
-     */
 
     const NAME$1 = 'tab';
     const DATA_KEY$1 = 'bs.tab';
@@ -4600,11 +4395,6 @@
     const SELECTOR_DATA_TOGGLE = '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]';
     const SELECTOR_DROPDOWN_TOGGLE = '.dropdown-toggle';
     const SELECTOR_DROPDOWN_ACTIVE_CHILD = ':scope > .dropdown-menu .active';
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
 
     class Tab extends BaseComponent {
         // Getters
@@ -4981,22 +4771,10 @@
         }
 
     }
-    /**
-     * ------------------------------------------------------------------------
-     * jQuery
-     * ------------------------------------------------------------------------
-     * add .Toast to jQuery only if jQuery is present
-     */
 
 
     defineJQueryPlugin(Toast);
 
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v5.0.2): index.umd.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
     var index_umd = {
         Alert,
         Button,
@@ -5015,4 +4793,3 @@
     return index_umd;
 
 })));
-//# sourceMappingURL=bootstrap.js.map
