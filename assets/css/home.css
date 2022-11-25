@@ -27,7 +27,7 @@ nav.navbar.navbar-expand-lg.bg-light {
 
 @media (min-width: 768px) {
     .title-sand {
-        font-size: 30px;
+        font-size: 1em;
     }
 }
 
@@ -490,6 +490,7 @@ main .contain-1 .update-free {
         /* max-width: 45%; */
         margin: 0 auto;
         flex: 1;
+        min-height: 280px;
     }
 }
 
@@ -1246,6 +1247,7 @@ main .contain-1 .update-free {
 .title-sand.fix {
     margin: 22px;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .title-sand.fix::before {
