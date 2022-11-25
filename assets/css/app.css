@@ -4,3 +4,7 @@
     padding: 0;
     font-family: 'Quicksand';
 }
+
+.social-icon:hover svg path {
+    fill: #fd8d51 !important;
+}
