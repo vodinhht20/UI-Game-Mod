@@ -530,6 +530,12 @@ h2.title-head {
     color: var(--color-white) !important;
 }
 
+@media (max-width: 768px) {
+    .head-top {
+        display: none !important;
+    }
+}
+
 
 /* End header */
 

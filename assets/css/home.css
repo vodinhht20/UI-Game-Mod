@@ -490,7 +490,6 @@ main .contain-1 .update-free {
         max-width: 45%;
         margin: 0 auto;
         flex: 1;
-        min-height: 280px;
     }
 }
 
@@ -1271,4 +1270,10 @@ main .contain-1 .update-free {
 
 header.container.head {
     padding: 0;
+}
+
+@media (max-width: 768px) {
+    .head-top {
+        display: none !important;
+    }
 }
