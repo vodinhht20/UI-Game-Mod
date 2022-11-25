@@ -938,7 +938,13 @@ h2.title-head {
     }
 }
 
-ul.tog, ul.tog2 {
+.active ul.tog,
+.active ul.tog2 {
+    display: flex !important;
+}
+
+ul.tog,
+ul.tog2 {
     position: absolute;
     background: #26293d;
     right: 0;
@@ -946,7 +952,6 @@ ul.tog, ul.tog2 {
     max-width: 9em;
     margin: auto;
     top: 1.9em;
-    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -955,11 +960,13 @@ ul.tog, ul.tog2 {
     text-align: start;
 }
 
-ul.tog.active, ul.tog2.active {
+ul.tog.active,
+ul.tog2.active {
     display: flex;
 }
 
-ul.tog:before, ul.tog2:before {
+ul.tog:before,
+ul.tog2:before {
     content: "";
     position: absolute;
     border-width: 10px;
@@ -969,7 +976,8 @@ ul.tog:before, ul.tog2:before {
     top: -17.9px;
 }
 
-ul.tog li, ul.tog2 li {
+ul.tog li,
+ul.tog2 li {
     color: #d8d8d8;
     font-size: 17px;
     margin-bottom: 4px;
@@ -981,9 +989,11 @@ ul.tog li, ul.tog2 li {
     -webkit-box-orient: vertical;
     font-weight: 500;
     border-bottom: 1px solid #747474;
-    width: 100%;   
+    width: 100%;
     padding-left: 15px;
 }
-ul.tog li:last-child, ul.tog2 li:last-child {
+
+ul.tog li:last-child,
+ul.tog2 li:last-child {
     border-bottom: none;
 }
