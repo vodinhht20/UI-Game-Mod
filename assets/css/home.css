@@ -26,7 +26,7 @@ nav.navbar.navbar-expand-lg.bg-light {
 
 @media (min-width: 768px) {
     .title-sand {
-        font-size: 1.3em;
+        font-size: 2em;
     }
 }
 
@@ -215,7 +215,9 @@ main .banner {
     main .banner.pc img {
         width: 100%;
         min-height: 266px;
+        max-height: 333px;
         object-fit: cover;
+        border-radius: 16px;
     }
 }
 
@@ -372,8 +374,8 @@ main .contain-1 .update-free {
     .article-features {
         width: 100%;
         height: 100%;
-        min-height: 180px;
-        max-width: 500px;
+        min-height: 220px;
+        max-width: 600px;
     }
     .article-features.full {
         max-width: 100%;
@@ -480,15 +482,12 @@ main .contain-1 .update-free {
 
 .features-2 {
     background: var(--color-system);
-    /* width: 354px; */
     height: auto;
 }
 
 @media (min-width: 768px) {
     .features-2 {
-        /* width: 100%; */
-        /* max-height: 330px; */
-        max-width: 45%;
+        min-height: 333px;
         margin: 0 auto;
         flex: 1;
     }
