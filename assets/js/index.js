@@ -24,3 +24,12 @@ $('.full-page').click(function () {
     $('.menu-search').removeClass('active');
     $('.full-page').removeClass('active');
 })
+
+$('.click-tog').click(function () {
+    $('.tog').toggleClass('active');
+})
+
+
+$('.click-tog2').click(function () {
+    $('.tog2').toggleClass('active');
+})

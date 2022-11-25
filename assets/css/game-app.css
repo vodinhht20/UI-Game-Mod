@@ -612,6 +612,7 @@ h2.title-head {
     color: #F47532;
     border-bottom: 2px solid #F47532;
     fill: #F47532;
+    position: relative;
 }
 
 .wrapper-game-app-page .nav-tabs {
@@ -935,4 +936,54 @@ h2.title-head {
     .footer .list-nav-footer {
         margin: 24px 0;
     }
+}
+
+ul.tog, ul.tog2 {
+    position: absolute;
+    background: #26293d;
+    right: 0;
+    left: 0;
+    max-width: 9em;
+    margin: auto;
+    top: 1.9em;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 0;
+    text-align: start;
+}
+
+ul.tog.active, ul.tog2.active {
+    display: flex;
+}
+
+ul.tog:before, ul.tog2:before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-color: transparent transparent #26293d;
+    border-style: solid;
+    right: 10px;
+    top: -17.9px;
+}
+
+ul.tog li, ul.tog2 li {
+    color: #d8d8d8;
+    font-size: 17px;
+    margin-bottom: 4px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+    border-bottom: 1px solid #747474;
+    width: 100%;   
+    padding-left: 15px;
+}
+ul.tog li:last-child, ul.tog2 li:last-child {
+    border-bottom: none;
 }

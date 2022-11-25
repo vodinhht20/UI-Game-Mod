@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 :root {
     --color-system: #1C1E2D;
     --color-background: #0D0F1E;
@@ -207,11 +208,13 @@ main .banner {
         margin: 25px 0;
         padding: 12px 16px;
     }
+
     main .banner.pc {
         margin: 0;
         width: auto;
         flex: 1;
     }
+
     main .banner.pc img {
         width: 100%;
         min-height: 266px;
@@ -240,10 +243,12 @@ main .contain-1 {
     .main .contain-1 {
         margin: 30px 0;
     }
+
     .main .contain-1 img {
         max-width: 200px;
         object-fit: contain;
     }
+
     .main .contain-1 .content div {
         padding: 4px 0;
     }
@@ -377,10 +382,12 @@ main .contain-1 .update-free {
         min-height: 220px;
         max-width: 600px;
     }
+
     .article-features.full {
         max-width: 100%;
         width: 100%;
     }
+
     .banner-and-detail {
         flex-direction: row-reverse;
         /* max-width: 100%; */
@@ -448,6 +455,7 @@ main .contain-1 .update-free {
         padding: 0;
         margin: 0 auto;
     }
+
     .article-text {
         font-size: 25px;
         padding: 26px 20px;
@@ -1075,23 +1083,29 @@ main .contain-1 .update-free {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .footer .list-nav-footer .nav-item {
         padding: unset;
         font-size: 14px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(1) {
         padding-right: 18px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(3) {
         padding-left: 18px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(2) {
         padding: 0 18px;
     }
+
     .footer .logo-footer svg {
         width: 150px;
         height: 40px;
     }
+
     .footer .list-social-network-icon .social-icon svg {
         width: 30px;
         height: 30px;
@@ -1103,29 +1117,37 @@ main .contain-1 .update-free {
         width: 150px;
         height: 40px;
     }
+
     .footer {
         padding-bottom: 10px;
     }
+
     .footer .list-social-network-icon .social-icon svg {
         width: 25px;
         height: 25px;
         grid-column-gap: 10px;
     }
+
     .footer .list-nav-footer .nav-item {
         font-size: 13px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(1) {
         padding-right: 10px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(3) {
         padding-left: 10px;
     }
+
     .footer .list-nav-footer .nav-item:nth-child(2) {
         padding: 0 10px;
     }
+
     .footer .copy-right {
         display: none;
     }
+
     .footer .list-nav-footer {
         margin: 24px 0;
     }
@@ -1237,6 +1259,12 @@ main .contain-1 .update-free {
     margin: 22px;
     text-align: center;
     font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    .title-sand.fix {
+        font-size: 2em;
+    }
 }
 
 .title-sand.fix::before {
