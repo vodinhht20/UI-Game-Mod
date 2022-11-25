@@ -210,8 +210,14 @@ main .banner {
     }
 
     main .banner.pc {
-        margin: 25px 0;
-        width: 730px;
+        margin: 0;
+        width: auto;
+        flex: 1;
+    }
+    main .banner.pc img {
+        width: 100%;
+        min-height: 266px;
+        object-fit: cover;
     }
 }
 
@@ -437,6 +443,7 @@ main .contain-1 .update-free {
 @media (min-width: 768px) {
     .article-btn {
         padding: 0;
+        margin: 0 auto;
     }
     .article-text {
         font-size: 25px;
@@ -472,16 +479,17 @@ main .contain-1 .update-free {
 
 .features-2 {
     background: var(--color-system);
-    width: 354px;
+    /* width: 354px; */
     height: auto;
 }
 
 @media (min-width: 768px) {
     .features-2 {
-        width: 100%;
-        min-height: 344px;
+        /* width: 100%; */
+        /* min-height: 344px; */
         /* max-width: 45%; */
         margin: 0 auto;
+        flex: 1;
     }
 }
 
