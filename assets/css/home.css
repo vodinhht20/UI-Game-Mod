@@ -1340,3 +1340,11 @@ header.container.head {
 .container-fluid.fix {
     padding: 0 !important;
 }
+
+.btn-action:hover {
+    /* background-color: #ffab7d !important; */
+}
+
+button:hover {
+    opacity: .8 !important;
+}

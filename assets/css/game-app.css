@@ -938,9 +938,12 @@ h2.title-head {
     }
 }
 
-.active ul.tog,
-.active ul.tog2 {
-    display: flex !important;
+.parent-tog2 {
+    position: relative;
+}
+
+.parent-tog {
+    position: relative;
 }
 
 ul.tog,
@@ -948,20 +951,33 @@ ul.tog2 {
     position: absolute;
     background: #26293d;
     right: 0;
-    left: 0;
+    left: 10px;
     max-width: 9em;
     margin: auto;
-    top: 1.9em;
+    top: 50px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     border-radius: 8px;
     padding: 0;
     text-align: start;
+    display: none;
+    z-index: 2;
 }
 
-ul.tog.active,
-ul.tog2.active {
+@media (max-width: 768px) {
+    ul.tog,
+    ul.tog2 {
+        top: 30px;
+    }
+}
+
+ul.tog2 {
+    left: -50px;
+}
+
+.nav-link.active ul.tog.active,
+.nav-link.active ul.tog2.active {
     display: flex;
 }
 
@@ -976,10 +992,14 @@ ul.tog2:before {
     top: -17.9px;
 }
 
+ul.tog2::before {
+    right: calc(50% - 50px);
+}
+
 ul.tog li,
 ul.tog2 li {
     color: #d8d8d8;
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 4px;
     flex: 1;
     overflow: hidden;
@@ -987,7 +1007,6 @@ ul.tog2 li {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    font-weight: 500;
     border-bottom: 1px solid #747474;
     width: 100%;
     padding-left: 15px;
@@ -996,4 +1015,9 @@ ul.tog2 li {
 ul.tog li:last-child,
 ul.tog2 li:last-child {
     border-bottom: none;
+}
+
+ul.tog li:hover,
+ul.tog2 li:hover {
+    color: var(--color-mojang);
 }
