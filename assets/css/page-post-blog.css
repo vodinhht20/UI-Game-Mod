@@ -1063,3 +1063,15 @@ svg {
         margin: 24px 0;
     }
 }
+
+
+/* Ẩn hiện bảng hướng dẫn chi tiết */
+
+.title-table-content button {
+    background-color: transparent;
+    border: none;
+}
+
+.content_fix {
+    display: none;
+}
