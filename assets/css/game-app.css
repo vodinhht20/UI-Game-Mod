@@ -608,7 +608,7 @@ h2.title-head {
     fill: rgba(255, 255, 255, 0.8);
 }
 
-.wrapper-game-app-page .tab-customize .nav-link.active {
+.wrapper-game-app-page .tab-customize .active .nav-link {
     color: #F47532;
     border-bottom: 2px solid #F47532;
     fill: #F47532;
