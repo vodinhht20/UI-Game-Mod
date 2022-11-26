@@ -8,3 +8,26 @@
 .social-icon:hover svg path {
     fill: #fd8d51 !important;
 }
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #fd8d51 !important;
+    background-color: transparent;
+}
+
+.user-info .dropdown-item:hover svg path {
+    fill: #fd8d51;
+}
+
+.dropdown-item:hover span {
+    color: #fd8d51 !important;
+}
+
+.footer .list-nav-footer .nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .list-nav-footer .nav-item:hover a {
+    color: #fd8d51;
+}
