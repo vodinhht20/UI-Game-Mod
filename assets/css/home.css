@@ -1371,15 +1371,21 @@
         }
         
         .content_fix {
+            height: 209px;
             display: none;
         }
         
         .banner-fix .banner {
+            border-radius: 5px;
             padding: 0;
             margin: 0;
             width: 50%;
             order: 2;
             padding-left: 1vh;
+        }
+        
+        .banner-fix .banner img {
+            border-radius: 5px;
         }
         
         .banner-fix {
@@ -1400,5 +1406,29 @@
             }
             .content-fix .title-table-content svg {
                 width: 25px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .content-fix .content_fix {
+                height: 295px;
+            }
+        }
+        
+        @media (width: 768px) {
+            .banner-fix .banner {
+                width: 100%;
+                order: 1;
+            }
+            .content-fix {
+                order: 2;
+                margin-top: 30px;
+                padding: 0;
+            }
+            .content-fix .title-table-content svg {
+                width: 25px;
+            }
+            .col-md-6 {
+                width: 100%;
             }
         }
