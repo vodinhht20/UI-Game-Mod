@@ -970,11 +970,6 @@ ul.tog2 {
     }
 }
 
-.nav-link.active ul.tog.active,
-.nav-link.active ul.tog2.active {
-    display: flex;
-}
-
 ul.tog:before,
 ul.tog2:before {
     content: "";
@@ -983,14 +978,13 @@ ul.tog2:before {
     border-color: transparent transparent #26293d;
     border-style: solid;
     right: 12px;
-    top: -17.9px;
+    top: -20.9px;
 }
 
 ul.tog li,
 ul.tog2 li {
     color: #d8d8d8;
     font-size: 16px;
-    margin-bottom: 4px;
     flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1007,10 +1001,21 @@ ul.tog li:last-child,
 ul.tog2 li:last-child {
     border-bottom: none;
 }
+.wrapper-game-app-page .box-collapse .nav-dropdown li:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.wrapper-game-app-page .box-collapse .nav-dropdown li:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.wrapper-game-app-page .box-collapse .nav-dropdown li:hover,
+.wrapper-game-app-page .box-collapse .nav-dropdown li.active {
+    background-color: #313448;
+}
 
-ul.tog li:hover,
-ul.tog2 li:hover {
-    color: var(--color-mojang);
+.wrapper-game-app-page .box-collapse .nav-dropdown.active {
+    display: flex;
 }
 
 .wrapper-game-app-page .box-collapse {
