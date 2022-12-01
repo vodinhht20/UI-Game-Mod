@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-between;
+        /* fixed height, cao hơn độ cao của item cao nhất */
+        height: 600px;
+    }
+
+    .item {
+        width: 32%;
+        margin-bottom: 2%;
+    }
+
+    /* sắp xếp lại theo từng dòng */
+    .item:nth-child(3n+1) {
+        order: 1;
+    }
+
+    .item:nth-child(3n+2) {
+        order: 2;
+    }
+
+    .item:nth-child(3n) {
+        order: 3;
+    }
+
+
+    /* bắt buộc chèn vào cột mới */
+    .container::before,
+    .container::after {
+        content: "";
+        flex-basis: 100%;
+        width: 0;
+        order: 2;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div style="height: 500px" class="item"></div>
+        <div style="height: 250px" class="item"></div>
+        <div style="height: 250px" class="item"></div>
+    </div>
+
+</body>
+
+</html>
